@@ -22,7 +22,7 @@ public class MainViewModel extends ViewModel {
         member.setAge(25);
         member.setName("Scarlet");
         member.setSurname("Johansen");
-        member.getImageList().add("girl1");
+        member.getImageList().add("https://i.imgur.com/SkiFvBY.jpg");
         return member;
     }
 
@@ -32,7 +32,7 @@ public class MainViewModel extends ViewModel {
         member.setAge(25);
         member.setName("Alexandra");
         member.setSurname("Dedario");
-        member.getImageList().add("girl3");
+        member.getImageList().add("https://i.imgur.com/4JvHQZQ.jpg");
         return member;
     }
 

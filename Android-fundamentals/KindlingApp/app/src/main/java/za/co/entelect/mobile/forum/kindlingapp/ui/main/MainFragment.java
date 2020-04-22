@@ -17,6 +17,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import com.squareup.picasso.Picasso;
 
 import za.co.entelect.mobile.forum.kindlingapp.R;
 import za.co.entelect.mobile.forum.kindlingapp.data.member.model.Member;
@@ -118,11 +119,12 @@ public class MainFragment extends Fragment {
 
     private void showCurrentMemberDetails() {
         Member member = getCurrentMember();
-        if(member.getImageList().size() > 0) {
+        if(mainImageView != null && member.getImageList().size() > 0) {
             String imageUrl = member.getImageList().get(0);
-            if(getContext() != null) {
-                int resourceId = this.getResources().getIdentifier(imageUrl, "drawable", getContext().getPackageName());
-                mainImageView.setImageResource(resourceId);
+            if(imageUrl != null) {
+                Picasso picasso = Picasso.get();
+                picasso.setIndicatorsEnabled(true);
+                picasso.load(imageUrl).placeholder(R.drawable.ic_whatshot_white_24dp).into(mainImageView);
             }
         }
         nameText.setText(String.format("%s %s", member.getName(), member.getSurname()));
