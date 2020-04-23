@@ -1,4 +1,4 @@
-package za.co.entelect.mobile.forum.kindlingapp;
+package za.co.entelect.mobile.forum.kindlingapp.ui.main;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
@@ -12,8 +12,8 @@ import android.widget.Toast;
 
 import com.google.android.material.navigation.NavigationView;
 
-import za.co.entelect.mobile.forum.kindlingapp.ui.login.LoginActivity;
-import za.co.entelect.mobile.forum.kindlingapp.ui.main.MainFragment;
+import za.co.entelect.mobile.forum.kindlingapp.R;
+import za.co.entelect.mobile.forum.kindlingapp.ui.profile.ProfileActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -70,12 +70,14 @@ public class MainActivity extends AppCompatActivity {
 
     private void onProfileSelected() {
         Toast.makeText(this, "This has not yet been implemented", Toast.LENGTH_SHORT).show();
+        Intent intent = new Intent(MainActivity.this, ProfileActivity.class);
+        startActivity(intent);
     }
 
     private void onLogoutSelected() {
-        Intent intent = new Intent(MainActivity.this, LoginActivity.class);
-        startActivity(intent);
-        finish();
+//        Intent intent = new Intent(MainActivity.this, LoginActivity.class);
+//        startActivity(intent);
+//        finish();
     }
 
     @Override

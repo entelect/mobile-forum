@@ -37,6 +37,20 @@
                 android:scaleType="centerCrop"
                 app:srcCompat="@drawable/ic_whatshot_white_24dp" />
 
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:alpha="0.4"
+                android:background="@color/black"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                app:layout_constraintBottom_toBottomOf="@id/imageContainer"
+                app:layout_constraintEnd_toEndOf="@id/imageContainer"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@id/imageContainer"
+                app:layout_constraintTop_toTopOf="@id/name_text"
+                app:layout_constraintVertical_bias="0.0" />
+
             <TextView
                 android:id="@+id/distance_text"
                 android:layout_width="wrap_content"
@@ -55,8 +69,7 @@
                 android:layout_marginStart="8dp"
                 android:layout_marginBottom="8dp"
                 tools:text="Jane Doe"
-                android:textColor="@color/cardview_light_background"
-                android:textSize="24sp"
+                style="@style/heading1.white"
                 app:layout_constraintBottom_toTopOf="@+id/distance_text"
                 app:layout_constraintStart_toStartOf="@id/imageContainer" />
 
@@ -65,9 +78,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
-                tools:text="24"
-                android:textColor="@color/cardview_light_background"
-                android:textSize="24sp"
+                style="@style/heading1.white"
                 app:layout_constraintBottom_toBottomOf="@+id/name_text"
                 app:layout_constraintStart_toEndOf="@+id/name_text" />
 
@@ -108,14 +119,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/fab_light_fire" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline8"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:paddingBottom="16dp"
-        app:layout_constraintGuide_percent="1" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline"

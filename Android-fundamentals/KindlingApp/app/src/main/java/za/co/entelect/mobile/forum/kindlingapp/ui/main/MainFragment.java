@@ -123,7 +123,6 @@ public class MainFragment extends Fragment {
             String imageUrl = member.getImageList().get(0);
             if(imageUrl != null) {
                 Picasso picasso = Picasso.get();
-                picasso.setIndicatorsEnabled(true);
                 picasso.load(imageUrl).placeholder(R.drawable.ic_whatshot_white_24dp).into(mainImageView);
             }
         }

@@ -1,39 +1,25 @@
 package za.co.entelect.mobile.forum.kindlingapp.ui.main;
 
+import android.location.Location;
+
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
+import za.co.entelect.mobile.forum.kindlingapp.data.Result;
+import za.co.entelect.mobile.forum.kindlingapp.data.member.MemberRepository;
+import za.co.entelect.mobile.forum.kindlingapp.data.member.MemberRepositoryImpl;
 import za.co.entelect.mobile.forum.kindlingapp.data.member.model.Member;
 
 
 public class MainViewModel extends ViewModel {
 
     private MutableLiveData<Member> currentMember = new MutableLiveData<>();
+    private MemberRepository memberRepository = new MemberRepositoryImpl();
 
     public void getFilteredProspect() {
-        //Todo - move to repository
-        currentMember.setValue(createGirl1Member());
-    }
-
-    private Member createGirl1Member() {
-        Member member = new Member();
-        member.setEntityId(0);
-        member.setAge(25);
-        member.setName("Scarlet");
-        member.setSurname("Johansen");
-        member.getImageList().add("https://i.imgur.com/SkiFvBY.jpg");
-        return member;
-    }
-
-    private Member createGirl3Member() {
-        Member member = new Member();
-        member.setEntityId(0);
-        member.setAge(25);
-        member.setName("Alexandra");
-        member.setSurname("Dedario");
-        member.getImageList().add("https://i.imgur.com/4JvHQZQ.jpg");
-        return member;
+        Result<Member> memberResult = memberRepository.getProspectiveCandidate();
+        currentMember.setValue(((Result.Success<Member>) memberResult).getData());
     }
 
     public LiveData<Member> getCurrentMember() {
@@ -41,14 +27,17 @@ public class MainViewModel extends ViewModel {
     }
 
     public void likeMember(Member currentMember) {
-        this.currentMember.setValue(createGirl3Member());
+        Result<Member> memberResult = memberRepository.likeMember(currentMember);
+        this.currentMember.setValue(((Result.Success<Member>) memberResult).getData());
     }
 
     public void lightAFire(Member currentMember) {
-        this.currentMember.setValue(createGirl3Member());
+        Result<Member> memberResult = memberRepository.lightAFire(currentMember);
+        this.currentMember.setValue(((Result.Success<Member>) memberResult).getData());
     }
 
     public void nopeMember(Member currentMember) {
-        this.currentMember.setValue(createGirl3Member());
+        Result<Member> memberResult = memberRepository.nopeMember(currentMember);
+        this.currentMember.setValue(((Result.Success<Member>) memberResult).getData());
     }
 }
