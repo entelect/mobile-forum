@@ -1,26 +1,25 @@
 package za.co.entelect.mobile.forum.kindlingapp.ui.main;
 
-import androidx.appcompat.widget.AppCompatImageView;
-import androidx.lifecycle.Observer;
-import androidx.lifecycle.ViewModelProvider;
-
 import android.os.Bundle;
-
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-import androidx.fragment.app.Fragment;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.appcompat.widget.AppCompatImageView;
+import androidx.fragment.app.Fragment;
+import androidx.lifecycle.Observer;
+import androidx.lifecycle.ViewModelProvider;
+
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.squareup.picasso.Picasso;
 
 import za.co.entelect.mobile.forum.kindlingapp.R;
 import za.co.entelect.mobile.forum.kindlingapp.data.member.model.Member;
+import za.co.entelect.mobile.forum.kindlingapp.ui.profile.ProfileActivity;
 
 public class MainFragment extends Fragment {
 
@@ -28,6 +27,9 @@ public class MainFragment extends Fragment {
     private TextView nameText;
     private TextView ageText;
     private TextView distanceText;
+    private FloatingActionButton fabLightFire;
+    private FloatingActionButton fabLike;
+    private FloatingActionButton fabNope;
 
     private MainViewModel mainViewModel;
     private Member currentMember;
@@ -45,21 +47,21 @@ public class MainFragment extends Fragment {
     }
 
     private void initView(View view) {
-        FloatingActionButton fabLike = view.findViewById(R.id.fab_like);
+        fabLike = view.findViewById(R.id.fab_like);
         fabLike.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 onLike();
             }
         });
-        FloatingActionButton fabLightFire = view.findViewById(R.id.fab_light_fire);
+        fabLightFire = view.findViewById(R.id.fab_light_fire);
         fabLightFire.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 onLightFire();
             }
         });
-        FloatingActionButton fabNope = view.findViewById(R.id.fab_nope);
+        fabNope = view.findViewById(R.id.fab_nope);
         fabNope.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -68,9 +70,19 @@ public class MainFragment extends Fragment {
         });
 
         mainImageView = view.findViewById(R.id.imageContainer);
+        mainImageView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                showMemberProfile();
+            }
+        });
         nameText = view.findViewById(R.id.name_text);
         ageText = view.findViewById(R.id.age_text);
         distanceText = view.findViewById(R.id.distance_text);
+    }
+
+    private void showMemberProfile() {
+        startActivity(ProfileActivity.getInstance(getContext(), currentMember));
     }
 
     private void onNope() {
@@ -85,7 +97,6 @@ public class MainFragment extends Fragment {
 
     private void onLike() {
         showToast("Person liked");
-        //TODO add loader
         mainViewModel.likeMember(getCurrentMember());
     }
 
@@ -99,11 +110,6 @@ public class MainFragment extends Fragment {
         ViewModelProvider viewModelProvider = new ViewModelProvider(this);
         mainViewModel = viewModelProvider.get(MainViewModel.class);
         observeCurrentMember();
-    }
-
-    @Override
-    public void onResume() {
-        super.onResume();
         mainViewModel.getFilteredProspect();
     }
 
@@ -118,17 +124,35 @@ public class MainFragment extends Fragment {
     }
 
     private void showCurrentMemberDetails() {
-        Member member = getCurrentMember();
-        if(mainImageView != null && member.getImageList().size() > 0) {
-            String imageUrl = member.getImageList().get(0);
-            if(imageUrl != null) {
-                Picasso picasso = Picasso.get();
-                picasso.load(imageUrl).placeholder(R.drawable.ic_whatshot_white_24dp).into(mainImageView);
-            }
+        if(getCurrentMember() == null) {
+            clearData();
         }
-        nameText.setText(String.format("%s %s", member.getName(), member.getSurname()));
-        ageText.setText(String.valueOf(member.getAge()));
-        distanceText.setText(String.format("%s km", Math.random()));
+        else {
+            Member member = getCurrentMember();
+            if (mainImageView != null && member.getImageList().size() > 0) {
+                String imageUrl = member.getImageList().get(0);
+                if (imageUrl != null) {
+                    Picasso picasso = Picasso.get();
+                    picasso.load(imageUrl).placeholder(R.drawable.ic_whatshot_white_24dp).into(mainImageView);
+                }
+            }
+            nameText.setText(member.getFullName());
+            ageText.setText(String.valueOf(member.getAge()));
+            distanceText.setText(String.format("%s km", Math.random()));
+        }
+    }
+
+    private void clearData() {
+        if(mainImageView != null) {
+            mainImageView.setImageResource(R.drawable.ic_whatshot_white_24dp);
+            mainImageView.setEnabled(false);
+        }
+        nameText.setText(R.string.no_more_kindling);
+        ageText.setText("");
+        distanceText.setText("");
+        fabNope.setEnabled(false);
+        fabLightFire.setEnabled(false);
+        fabLike.setEnabled(false);
     }
 
     private Member getCurrentMember() {

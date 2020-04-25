@@ -2,14 +2,14 @@ package za.co.entelect.mobile.forum.kindlingapp.data.member.model;
 
 import android.location.Location;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Member {
+public class Member implements Serializable {
 
     private long entityId;
-    private String Name;
-    private String Surname;
+    private String fullName;
     private int age;
     private Location location;
     private String shortBio;
@@ -28,20 +28,12 @@ public class Member {
         this.entityId = entityId;
     }
 
-    public String getName() {
-        return Name;
+    public String getFullName() {
+        return fullName;
     }
 
-    public void setName(String name) {
-        Name = name;
-    }
-
-    public String getSurname() {
-        return Surname;
-    }
-
-    public void setSurname(String surname) {
-        Surname = surname;
+    public void setFullName(String fullName) {
+        this.fullName = fullName;
     }
 
     public int getAge() {

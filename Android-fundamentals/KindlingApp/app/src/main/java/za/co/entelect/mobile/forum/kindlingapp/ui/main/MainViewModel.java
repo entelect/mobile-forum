@@ -19,7 +19,12 @@ public class MainViewModel extends ViewModel {
 
     public void getFilteredProspect() {
         Result<Member> memberResult = memberRepository.getProspectiveCandidate();
-        currentMember.setValue(((Result.Success<Member>) memberResult).getData());
+        if(memberResult instanceof Result.Success) {
+            currentMember.setValue(((Result.Success<Member>) memberResult).getData());
+        }
+        else {
+            currentMember.setValue(null);
+        }
     }
 
     public LiveData<Member> getCurrentMember() {
@@ -27,17 +32,17 @@ public class MainViewModel extends ViewModel {
     }
 
     public void likeMember(Member currentMember) {
-        Result<Member> memberResult = memberRepository.likeMember(currentMember);
-        this.currentMember.setValue(((Result.Success<Member>) memberResult).getData());
+        memberRepository.likeMember(currentMember);
+        getFilteredProspect();
     }
 
     public void lightAFire(Member currentMember) {
-        Result<Member> memberResult = memberRepository.lightAFire(currentMember);
-        this.currentMember.setValue(((Result.Success<Member>) memberResult).getData());
+        memberRepository.lightAFire(currentMember);
+        getFilteredProspect();
     }
 
     public void nopeMember(Member currentMember) {
-        Result<Member> memberResult = memberRepository.nopeMember(currentMember);
-        this.currentMember.setValue(((Result.Success<Member>) memberResult).getData());
+        memberRepository.nopeMember(currentMember);
+        getFilteredProspect();
     }
 }

@@ -24,42 +24,54 @@ public class MemberRepositoryImpl implements MemberRepository {
 
     @Override
     public Result<Member> getProspectiveCandidate() {
-        Member member = members.get(index++);
-        return new Result.Success(member);
+        if(index < members.size()) {
+            Member member = members.get(index++);
+            return new Result.Success(member);
+        }
+        return new Result.Error(new Exception());
     }
 
     @Override
-    public Result<Member> likeMember(Member currentMember) {
-        return getProspectiveCandidate();
+    public Result likeMember(Member currentMember) {
+        return new Result.Success(null);
     }
 
     @Override
-    public Result<Member> lightAFire(Member currentMember) {
-        return getProspectiveCandidate();
+    public Result lightAFire(Member currentMember) {
+        return new Result.Success(null);
     }
 
     @Override
-    public Result<Member> nopeMember(Member currentMember) {
-        return getProspectiveCandidate();
+    public Result nopeMember(Member currentMember) {
+        return new Result.Success(null);
     }
 
     private Member createGirl1Member() {
         Member member = new Member();
         member.setEntityId(0);
-        member.setAge(25);
-        member.setName("Scarlet");
-        member.setSurname("Johansen");
+        member.setAge(35);
+        member.setFullName("Scarlett Johansson");
         member.getImageList().add("https://i.imgur.com/SkiFvBY.jpg");
+        member.getImageList().add("https://i.imgur.com/SxNeQA6.png");
+        member.getImageList().add("https://i.imgur.com/6egqplg.jpg");
+        member.getImageList().add("https://i.imgur.com/AiD80uV.jpg");
+        member.getImageList().add("https://i.imgur.com/1vhTLzP.jpg");
+        member.getImageList().add("https://i.imgur.com/6ID3noQ.jpg");
+
         return member;
     }
 
     private Member createGirl2Member() {
         Member member = new Member();
-        member.setEntityId(0);
-        member.setAge(25);
-        member.setName("Alexandra");
-        member.setSurname("Dedario");
+        member.setEntityId(1);
+        member.setAge(24);
+        member.setFullName("Alexandra Daddario");
         member.getImageList().add("https://i.imgur.com/4JvHQZQ.jpg");
+        member.getImageList().add("https://i.imgur.com/7lGuU74.jpg");
+        member.getImageList().add("https://i.imgur.com/JO3FQlX.jpg");
+        member.getImageList().add("https://i.imgur.com/HkiGpde.jpg");
+        member.getImageList().add("https://i.imgur.com/KdVmzc0.jpg");
+        member.getImageList().add("https://i.imgur.com/GXe5YWy.jpg");
         return member;
     }
 }

@@ -6,9 +6,9 @@ import za.co.entelect.mobile.forum.kindlingapp.data.member.model.Member;
 public interface MemberRepository {
     Result<Member> getProspectiveCandidate();
 
-    Result<Member> likeMember(Member currentMember);
+    Result likeMember(Member currentMember);
 
-    Result<Member> lightAFire(Member currentMember);
+    Result lightAFire(Member currentMember);
 
-    Result<Member> nopeMember(Member currentMember);
+    Result nopeMember(Member currentMember);
 }
