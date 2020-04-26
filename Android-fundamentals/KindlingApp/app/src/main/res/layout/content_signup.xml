@@ -20,7 +20,7 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:hint="Birthday"
+        android:hint="Age"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="8dp">
@@ -28,7 +28,7 @@
             android:id="@+id/birthday_input"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="date"/>
+            android:inputType="number"/>
     </com.google.android.material.textfield.TextInputLayout>
 
     <LinearLayout
@@ -52,5 +52,18 @@
             android:layout_marginLeft="8dp"
             android:layout_marginRight="8dp"/>
     </LinearLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:hint="Bio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp">
+        <EditText
+            android:id="@+id/bio_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
 
 </androidx.appcompat.widget.LinearLayoutCompat>

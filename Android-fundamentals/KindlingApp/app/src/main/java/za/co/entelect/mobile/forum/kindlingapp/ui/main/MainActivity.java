@@ -23,12 +23,14 @@ import za.co.entelect.mobile.forum.kindlingapp.ui.profile.ProfileActivity;
 
 public class MainActivity extends AppCompatActivity {
 
+    private static final String MEMBER_EXTRA_KEY = "member_extra_key";
     private ActionBarDrawerToggle actionBarDrawerToggle;
-    private Member loggedinUser;
+    private Member loggedInUser;
     private NavigationView navigationView;
 
-    public static Intent getStartIntent(Context context) {
+    public static Intent getStartIntent(Context context, Member model) {
         Intent intent = new Intent(context, MainActivity.class);
+        intent.putExtra(MEMBER_EXTRA_KEY, model);
         return intent;
     }
 
@@ -46,17 +48,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void setLoggedInUser() {
-        loggedinUser = createMaleMember();
-    }
-
-    private Member createMaleMember() {
-        Member member = new Member();
-        member.setEntityId(0);
-        member.setAge(51);
-        member.setFullName("Hugh (Wolverine) Jackman");
-        member.getImageList().add("https://i.imgur.com/7HnFi2V.jpg");
-        member.getImageList().add("https://i.imgur.com/oTfkM.png");
-        return member;
+        if (getIntent().getExtras() != null) {
+            loggedInUser = (Member) getIntent().getExtras().getSerializable(MEMBER_EXTRA_KEY);
+        }
     }
 
     private void setupNavigation() {
@@ -71,7 +65,7 @@ public class MainActivity extends AppCompatActivity {
         navigationView = findViewById(R.id.navigation);
         LinearLayout layout = (LinearLayout) navigationView.getHeaderView(0);
         ImageView imageView = layout.findViewById(R.id.navigation_header_image0);
-        Picasso.get().load(loggedinUser.getImageList().get(0)).into(imageView);
+        Picasso.get().load(loggedInUser.getImageList().get(0)).into(imageView);
         navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
@@ -100,7 +94,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void onProfileSelected() {
-        startActivity(ProfileActivity.getInstance(this, loggedinUser));
+        startActivity(ProfileActivity.getInstance(this, loggedInUser));
     }
 
     private void onLogoutSelected() {

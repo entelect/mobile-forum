@@ -1,4 +1,4 @@
-package za.co.entelect.mobile.forum.kindlingapp.ui.login;
+package za.co.entelect.mobile.forum.kindlingapp.ui.signup;
 
 import android.Manifest;
 import android.content.Intent;
@@ -28,6 +28,7 @@ import com.google.android.material.snackbar.Snackbar;
 
 import za.co.entelect.mobile.forum.kindlingapp.BuildConfig;
 import za.co.entelect.mobile.forum.kindlingapp.R;
+import za.co.entelect.mobile.forum.kindlingapp.data.member.model.Member;
 import za.co.entelect.mobile.forum.kindlingapp.service.google.Constants;
 import za.co.entelect.mobile.forum.kindlingapp.service.google.FetchAddressIntentService;
 import za.co.entelect.mobile.forum.kindlingapp.ui.main.MainActivity;
@@ -223,7 +224,18 @@ public class SignupActivity extends AppCompatActivity {
     }
 
     public void onSignUp(View view) {
-        startActivity(MainActivity.getStartIntent(this));
+        startActivity(MainActivity.getStartIntent(this, getMemberModel()));
+    }
+
+    private Member getMemberModel() {
+        //TODO - complete sign up
+        Member member = new Member();
+        member.setEntityId(0);
+        member.setAge(51);
+        member.setFullName("Hugh (Wolverine) Jackman");
+        member.getImageList().add("https://i.imgur.com/7HnFi2V.jpg");
+        member.getImageList().add("https://i.imgur.com/oTfkM.png");
+        return member;
     }
 
     private void onLocationFound(String locationString) {
