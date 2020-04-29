@@ -19,6 +19,7 @@ import com.squareup.picasso.Picasso;
 
 import za.co.entelect.mobile.forum.kindlingapp.R;
 import za.co.entelect.mobile.forum.kindlingapp.data.member.model.Member;
+import za.co.entelect.mobile.forum.kindlingapp.ui.login.LoginActivity;
 import za.co.entelect.mobile.forum.kindlingapp.ui.profile.ProfileActivity;
 
 public class MainActivity extends AppCompatActivity {
@@ -98,9 +99,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void onLogoutSelected() {
-//        Intent intent = new Intent(MainActivity.this, LoginActivity.class);
-//        startActivity(intent);
-//        finish();
+        Intent intent = new Intent(MainActivity.this, LoginActivity.class);
+        startActivity(intent);
+        finish();
     }
 
     @Override

@@ -33,4 +33,8 @@
 
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
+    <style name="test" >
+        <item name="dialogCornerRadius">?android:dialogCornerRadius</item>
+    </style>
+
 </resources>
