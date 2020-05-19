@@ -25,14 +25,14 @@ class MainActivity : AppCompatActivity() {
         * 1. Doing background processing on the main(UI) thread
         * */
 
-//        val connection = selfieUrl.openConnection()
-//        connection.doInput = true // sets the connection to be used for input/download
-//        connection.connect()
-//
-//        val inputSteam = connection.getInputStream()
-//        val bitmap = BitmapFactory.decodeStream(inputSteam)
-//
-//        imageContainer.setImageBitmap(bitmap)
+        val connection = selfieUrl.openConnection()
+        connection.doInput = true // sets the connection to be used for input/download
+        connection.connect()
+
+        val inputSteam = connection.getInputStream()
+        val bitmap = BitmapFactory.decodeStream(inputSteam)
+
+        imageContainer.setImageBitmap(bitmap)
 
         /*
         * 2. The above throws android.os.NetworkOnMainThreadException
@@ -118,23 +118,23 @@ class MainActivity : AppCompatActivity() {
         /*
         * 3.1 Coroutine scope basics
         * */
-        Log.d("MainActivityThread", Thread.currentThread().name)
-        //context = Dispatchers.IO -> GlobalScope.launch(context = Dispatchers.IO)
-        GlobalScope.launch(Dispatchers.IO) {
-            Log.d("MainActivityThread", Thread.currentThread().name)
-            val connection = selfieUrl.openConnection()
-            connection.doInput = true
-            connection.connect()
-
-            val inputSteam = connection.getInputStream()
-            val bitmap = BitmapFactory.decodeStream(inputSteam)
-
-            //the scope is a coroutine scope, so we can just use launch
-            launch(Dispatchers.Main) {
-                Log.d("MainActivityThread", Thread.currentThread().name)
-                imageContainer.setImageBitmap(bitmap)
-            }
-        }
+//        Log.d("MainActivityThread", Thread.currentThread().name)
+//        //context = Dispatchers.IO -> GlobalScope.launch(context = Dispatchers.IO)
+//        GlobalScope.launch(Dispatchers.IO) {
+//            Log.d("MainActivityThread", Thread.currentThread().name)
+//            val connection = selfieUrl.openConnection()
+//            connection.doInput = true
+//            connection.connect()
+//
+//            val inputSteam = connection.getInputStream()
+//            val bitmap = BitmapFactory.decodeStream(inputSteam)
+//
+//            //the scope is a coroutine scope, so we can just use launch
+//            launch(Dispatchers.Main) {
+//                Log.d("MainActivityThread", Thread.currentThread().name)
+//                imageContainer.setImageBitmap(bitmap)
+//            }
+//        }
 
     }
 }
