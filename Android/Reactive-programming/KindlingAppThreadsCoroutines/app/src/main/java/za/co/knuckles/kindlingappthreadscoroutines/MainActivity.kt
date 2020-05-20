@@ -103,6 +103,7 @@ class MainActivity : AppCompatActivity() {
         *
         * Uses default coroutine scope
         * */
+
 //        Log.d("MainActivityThread", Thread.currentThread().name)
 //        GlobalScope.launch {
 //            Log.d("MainActivityThread", Thread.currentThread().name)
