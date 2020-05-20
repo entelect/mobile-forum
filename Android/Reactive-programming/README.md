@@ -1,5 +1,7 @@
 # Coroutines!
 
+The live coding videos that shows the migration from part 1 to part 4 can be found [here](https://entelectza-my.sharepoint.com/:f:/g/personal/sahil_naran_entelect_co_za/EtGb8IBVg6xJoz18Bu7fmQABT7qgWJKz-rQ5SKwBCIZn9Q?e=MQdGY7) 
+
 ## KindlingAppThreadsCoroutines
 
 This app shows a migration from threads to coroutines and the basic GlobalScope Coroutine
