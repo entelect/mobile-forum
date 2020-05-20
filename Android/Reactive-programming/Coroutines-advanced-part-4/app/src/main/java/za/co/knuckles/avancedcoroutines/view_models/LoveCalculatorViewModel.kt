@@ -11,7 +11,6 @@ class LoveCalculatorViewModel (private val loveCalculatorRepository: ILoveCalcul
     ILoveCalculatorViewModel {
 
     private lateinit var mainView: IMainView
-    private val job = SupervisorJob()
 
     private val coroutineExceptionHandler =
         CoroutineExceptionHandler { coroutineContext, throwable ->

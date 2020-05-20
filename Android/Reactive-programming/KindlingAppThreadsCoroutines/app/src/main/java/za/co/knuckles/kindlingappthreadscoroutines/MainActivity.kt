@@ -77,8 +77,12 @@ class MainActivity : AppCompatActivity() {
 //            }
 //        }).start()
 
-        //Second way - using handlers (used to send messages to the loopers) and
-        // loopers (main looper, for the main thread)
+        /*
+        * 2.3
+        * Second way - using handlers (used to send messages to the loopers) and
+        * loopers (main looper, for the main thread)
+        * */
+
 //        val mainLooper = Looper.getMainLooper()
 //        Thread(Runnable {
 //            val connection = selfieUrl.openConnection()
