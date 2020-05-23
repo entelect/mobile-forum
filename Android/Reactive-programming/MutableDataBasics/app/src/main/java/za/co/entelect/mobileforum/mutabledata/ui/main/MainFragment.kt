@@ -29,7 +29,7 @@ class MainFragment : Fragment() {
         super.onCreate(savedInstanceState)
         viewModel = ViewModelProvider(this).get(MainViewModel::class.java)
 
-        viewModel.dateNameEmitter.observe(this, Observer { dateName ->
+        viewModel.friendlyNameEmitted.observe(this, Observer { dateName ->
             new_date_name.text = dateName
         })
 
