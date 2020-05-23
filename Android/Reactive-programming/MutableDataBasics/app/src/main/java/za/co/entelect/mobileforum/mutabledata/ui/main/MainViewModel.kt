@@ -2,9 +2,29 @@ package za.co.entelect.mobileforum.mutabledata.ui.main
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
+import za.co.entelect.mobileforum.mutabledata.utils.NameUtil
+import java.util.*
+import kotlin.concurrent.schedule
 
 class MainViewModel : ViewModel() {
-    val dateName: MutableLiveData<String> by lazy {
-        MutableLiveData<String>()
+    val dateNameEmitter = MutableLiveData<String>()
+    val isEmittingDateName = MutableLiveData<Boolean>()
+
+    private var TIMER_NAME = "DateNames";
+    private var timer = Timer(TIMER_NAME, false)
+    private var rand = Random();
+
+    fun startEmittingNames() {
+        isEmittingDateName.postValue(true)
+
+        timer.schedule(20, rand.nextInt(1000).toLong()) {
+            dateNameEmitter.postValue(NameUtil.GetRandomName());
+        }
+    }
+
+    fun stopEmittingNames() {
+        isEmittingDateName.postValue(false)
+        timer.cancel()
+        timer = Timer(TIMER_NAME, false)
     }
 }

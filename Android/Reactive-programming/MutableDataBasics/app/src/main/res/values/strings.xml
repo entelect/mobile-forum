@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">My Application</string>
+    <string name="new_data_name">New Data Name:</string>
+    <string name="date_name">Date Name</string>
+    <string name="select_new_date">Select New Date</string>
+    <string name="stop_selecting_a_new_date">Stop Selecting a new Date</string>
+    <string name="select">Select!</string>
 </resources>

@@ -1,17 +1,14 @@
 package za.co.entelect.mobileforum.mutabledata.ui.main
 
-import androidx.lifecycle.ViewModelProviders
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import kotlinx.android.synthetic.main.main_fragment.*
 import za.co.entelect.mobileforum.mutabledata.R
-import za.co.entelect.mobileforum.mutabledata.utils.NameUtil
-import java.util.*
 
 class MainFragment : Fragment() {
 
@@ -32,19 +29,25 @@ class MainFragment : Fragment() {
         super.onCreate(savedInstanceState)
         viewModel = ViewModelProvider(this).get(MainViewModel::class.java)
 
-        val nameObserver = Observer<String> { newDateName ->
-            message.text = newDateName
-        }
+        viewModel.dateNameEmitter.observe(this, Observer { dateName ->
+            new_date_name.text = dateName
+        })
 
-        viewModel.dateName.observe(this, nameObserver)
+        viewModel.isEmittingDateName.observe(this, Observer { isEmitting ->
+            button_date_stop.isEnabled = isEmitting ?: false
+            button_date_change_name_start.isEnabled = !button_date_stop.isEnabled
+        })
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        button_date_change_name.setOnClickListener {
-            viewModel.dateName.setValue(NameUtil.GetRandomName())
+        button_date_change_name_start.setOnClickListener {
+            viewModel.startEmittingNames()
+        }
+
+        button_date_stop.setOnClickListener {
+            viewModel.stopEmittingNames()
         }
     }
-
 }
