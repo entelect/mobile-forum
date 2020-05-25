@@ -1,10 +1,12 @@
 import UIKit
 import CocoaLumberjack
+import RxCocoa
+import RxSwift
 
 extension UIImageView {
-    
+
     static let loadingViewTag = 901234
-    
+
     func addLoadingView() {
         if loadingIndicator != nil {
             return
@@ -18,18 +20,18 @@ extension UIImageView {
         indicator.centerXAnchor.constraint(equalTo: centerXAnchor).isActive = true
         indicator.centerYAnchor.constraint(equalTo: centerYAnchor).isActive = true
     }
-    
+
     func removeLoadingView() {
         if let loading = loadingIndicator {
             loading.stopAnimating()
             loading.removeFromSuperview()
         }
     }
-    
+
     private var loadingIndicator: UIActivityIndicatorView? {
         return viewWithTag(UIImageView.loadingViewTag) as? UIActivityIndicatorView
     }
-    
+
     func load(url urlStr: String) {
         addLoadingView()
         DispatchQueue.global().async { [weak self] in

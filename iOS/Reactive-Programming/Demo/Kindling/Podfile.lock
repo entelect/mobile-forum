@@ -7,6 +7,9 @@ PODS:
   - RxCocoa (5.1.1):
     - RxRelay (~> 5)
     - RxSwift (~> 5)
+  - RxGesture (3.0.2):
+    - RxCocoa (~> 5.1)
+    - RxSwift (~> 5.1)
   - RxRelay (5.1.1):
     - RxSwift (~> 5)
   - RxSwift (5.1.1)
@@ -17,6 +20,7 @@ DEPENDENCIES:
   - CocoaLumberjack/Swift (= 3.6.1)
   - RxBlocking (~> 5)
   - RxCocoa (~> 5)
+  - RxGesture (~> 3)
   - RxSwift (~> 5)
   - RxTest (~> 5)
 
@@ -25,6 +29,7 @@ SPEC REPOS:
     - CocoaLumberjack
     - RxBlocking
     - RxCocoa
+    - RxGesture
     - RxRelay
     - RxSwift
     - RxTest
@@ -33,10 +38,11 @@ SPEC CHECKSUMS:
   CocoaLumberjack: b17ae15142558d08bbacf69775fa10c4abbebcc9
   RxBlocking: 5f700a78cad61ce253ebd37c9a39b5ccc76477b4
   RxCocoa: 32065309a38d29b5b0db858819b5bf9ef038b601
+  RxGesture: d6bd7447ca3a596c7a9702a6a2b6a2bb5d8bae54
   RxRelay: d77f7d771495f43c556cbc43eebd1bb54d01e8e9
   RxSwift: 81470a2074fa8780320ea5fe4102807cb7118178
   RxTest: 711632d5644dffbeb62c936a521b5b008a1e1faa
 
-PODFILE CHECKSUM: ced638531e4cf0e3f1f687a1e4b979c1027c063a
+PODFILE CHECKSUM: 8bdd6a01cec0449da600450ca1977f80c742606c
 
 COCOAPODS: 1.9.1

@@ -8,6 +8,7 @@ target 'Kindling' do
   # Pods for Kindling
   pod 'CocoaLumberjack/Swift', '3.6.1'
   pod 'RxSwift', '~> 5'
+  pod 'RxGesture', '~> 3'
   pod 'RxCocoa', '~> 5'
 
   target 'KindlingTests' do
