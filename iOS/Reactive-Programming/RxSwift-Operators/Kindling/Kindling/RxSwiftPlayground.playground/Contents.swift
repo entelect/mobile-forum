@@ -1,98 +1,109 @@
 //: Please build the scheme 'RxSwiftPlayground' first
 import RxSwift
 
-example(of: "manual dispose") {
-    let subscriber = Observable<Void>.never()
-        .subscribe(
-            onNext: { print($0) },
-            onCompleted: { print("Completed") },
-            onDisposed: { print("Disposed") }
-        )
-    
-    subscriber.dispose()
-}
-
-example(of: "disposeBag") {
-  let disposeBag = DisposeBag()
-
-  Observable<Void>.never()
-      .subscribe(
-          onNext: { print($0) },
-          onCompleted: { print("Completed") },
-          onDisposed: { print("Disposed") }
-      )
-      .disposed(by: disposeBag)
-}
-
-example(of: "Subcribing to observable with errors") {
-    let disposeBag = DisposeBag()
-
-    enum PickUpLineError: Error {
-        case nsfw
-    }
-
-    Observable<String>.create { observer -> Disposable in
-            observer.onNext(pickUpLineA)
-            observer.onNext(pickUpLineB)
-            observer.onError(PickUpLineError.nsfw)
-
-            return Disposables.create()
-        }.subscribe(
-            onNext: { element in
-                print(element)
-            },
-            onError: { error in
-                print("An Error occured: \(error)")
-            }
-        )
-        .disposed(by: disposeBag)
-}
-
-example(of: "Filter") {
-  
-    Observable.of(1,2,2,1)
-        .filter(<#T##predicate: (Int) throws -> Bool##(Int) throws -> Bool#>)
-        .subscribe (onNext: { element in
-            print(element)
-        }).dispose()
-}
-
-example(of: "Flatmap") {
-  
-  let disposeBag = DisposeBag()
-    
-    enum MatchStatus {
-        case single
-        case hitched
-        case basicallyMarried
-        case couple
-    }
-    
-    struct KindlingUser {
-        let name: String
-        let matchStatus : BehaviorSubject<MatchStatus>
-    }
-  
-    
-    let bob = KindlingUser(name: "Bob", matchStatus: BehaviorSubject<MatchStatus>(value: .single))
-    let jane = KindlingUser(name: "Jane", matchStatus: BehaviorSubject<MatchStatus>(value: .single))
-    
-    let kindlingUsers = PublishSubject<KindlingUser>()
-    
-    kindlingUsers
-        .flatMap{ $0.matchStatus }
-        .subscribe(onNext: {
+// MARK: RxSwift Basics
+example(of: "Creating - just operator") {
+    Observable.just(pickUpLineA)
+        .subscribe {
             print($0)
-        })
-        .disposed(by: disposeBag)
-    
-    //kindlingUsers.onNext(bob)
-    
-    //bob.matchStatus.onNext(.hitched)
-    
-    //kindlingUsers.onNext(jane)
-    
-    //jane.matchStatus.onNext(.basicallyMarried)
+    }.dispose()
 }
 
+//example(of: "Creating - of operator") {
+//    Observable.of(pickUpLineA, pickUpLineB, pickUpLineC)
+//        .subscribe {
+//            print($0)
+//    }.dispose()
+//}
 
+//example(of: "Creating - of operator (with type of Array)") {
+//    Observable.of([pickUpLineA, pickUpLineB, pickUpLineC])
+//        .subscribe {
+//            print($0)
+//    }.dispose()
+//}
+
+//example(of: "Creating - from operator (with type of Array)") {
+//    Observable.from([pickUpLineA, pickUpLineB, pickUpLineC])
+//        .subscribe {
+//            print($0)
+//    }.dispose()
+//}
+
+//example(of: "Subscribe - Basic") {
+//    Observable.from([pickUpLineA, pickUpLineB, pickUpLineC])
+//        .subscribe {
+//            print($0)
+//    }.dispose()
+//}
+
+//example(of: "Subscribe - OnX Closures") {
+//    Observable.from([pickUpLineA, pickUpLineB, pickUpLineC])
+//    .subscribe(
+//        onNext: { print($0) },
+//        onCompleted: { print("Completed") }
+//    )
+//    .dispose()
+//}
+
+//example(of: "Empty") {
+//    Observable.empty()
+//    .subscribe(
+//        onNext: { print($0) },
+//        onCompleted: { print("Completed") }
+//    )
+//    .dispose()
+//}
+
+//example(of: "Never") {
+//    Observable.never()
+//    .subscribe(
+//        onNext: { print($0) },
+//        onCompleted: { print("Completed") }
+//    )
+//    .dispose()
+//}
+
+//example(of: "Dispose") {
+//    Observable.never()
+//    .subscribe(
+//        onNext: { print($0) },
+//        onCompleted: { print("Completed") },
+//        onDisposed: { print("Disposed") }
+//    )
+//    .dispose()
+//}
+
+//example(of: "Dispose bag") {
+//    let disposeBag = DisposeBag()
+//
+//    Observable.never()
+//    .subscribe(
+//        onNext: { print($0) },
+//        onCompleted: { print("Completed") },
+//        onDisposed: { print("Disposed") }
+//    )
+//    .disposed(by: disposeBag)
+//}
+
+//example(of: "Observable that errors") {
+//    let disposeBag = DisposeBag()
+//
+//    enum PickUpLineError: Error {
+//        case nsfw
+//    }
+//
+//    Observable.create{ observer in
+//        observer.onNext(pickUpLineA)
+//        observer.onNext(pickUpLineD)
+//        observer.onError(PickUpLineError.nsfw)
+//        observer.onNext(pickUpLineA)
+//
+//        return Disposables.create()
+//    }
+//    .subscribe(
+//        onNext: { print($0) },
+//        onError: { print("An Error occured: \($0)")}
+//    )
+//    .disposed(by: disposeBag)
+//}

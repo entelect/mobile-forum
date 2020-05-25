@@ -48,7 +48,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0A94EBFD24755209009E2D04 /* RxSwiftPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = RxSwiftPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		199EA5C108B44F952015E82E /* Pods-Kindling.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kindling.debug.xcconfig"; path = "Target Support Files/Pods-Kindling/Pods-Kindling.debug.xcconfig"; sourceTree = "<group>"; };
 		454EBA0EA617D47E55A3D6DF /* Pods-KindlingTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KindlingTests.release.xcconfig"; path = "Target Support Files/Pods-KindlingTests/Pods-KindlingTests.release.xcconfig"; sourceTree = "<group>"; };
 		4DC973EFF032C105B0E4D0A0 /* Pods_KindlingTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KindlingTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -150,7 +149,6 @@
 		CF91846C2451DC67007EC23A /* Kindling */ = {
 			isa = PBXGroup;
 			children = (
-				0A94EBFD24755209009E2D04 /* RxSwiftPlayground.playground */,
 				CFA0763B24570AF0006E7632 /* Utils */,
 				CF9184B124523671007EC23A /* Extensions */,
 				CF9184A9245224A5007EC23A /* Services */,

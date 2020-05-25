@@ -1,0 +1,272 @@
+//: Please build the scheme 'RxSwiftPlayground' first
+import RxSwift
+
+// MARK: RxSwift Basics
+example(of: "Creating - just operator") {
+    Observable.just(pickUpLineA)
+        .subscribe {
+            print($0)
+    }.dispose()
+}
+
+//example(of: "Creating - of operator") {
+//    Observable.of(pickUpLineA, pickUpLineB, pickUpLineC)
+//        .subscribe {
+//            print($0)
+//    }.dispose()
+//}
+
+//example(of: "Creating - of operator (with type of Array)") {
+//    Observable.of([pickUpLineA, pickUpLineB, pickUpLineC])
+//        .subscribe {
+//            print($0)
+//    }.dispose()
+//}
+
+//example(of: "Creating - from operator (with type of Array)") {
+//    Observable.from([pickUpLineA, pickUpLineB, pickUpLineC])
+//        .subscribe {
+//            print($0)
+//    }.dispose()
+//}
+
+//example(of: "Subscribe - Basic") {
+//    Observable.from([pickUpLineA, pickUpLineB, pickUpLineC])
+//        .subscribe {
+//            print($0)
+//    }.dispose()
+//}
+
+//example(of: "Subscribe - OnX Closures") {
+//    Observable.from([pickUpLineA, pickUpLineB, pickUpLineC])
+//    .subscribe(
+//        onNext: { print($0) },
+//        onCompleted: { print("Completed") }
+//    )
+//    .dispose()
+//}
+
+//example(of: "Empty") {
+//    Observable.empty()
+//    .subscribe(
+//        onNext: { print($0) },
+//        onCompleted: { print("Completed") }
+//    )
+//    .dispose()
+//}
+
+//example(of: "Never") {
+//    Observable.never()
+//    .subscribe(
+//        onNext: { print($0) },
+//        onCompleted: { print("Completed") }
+//    )
+//    .dispose()
+//}
+
+//example(of: "Dispose") {
+//    Observable.never()
+//    .subscribe(
+//        onNext: { print($0) },
+//        onCompleted: { print("Completed") },
+//        onDisposed: { print("Disposed") }
+//    )
+//    .dispose()
+//}
+
+//example(of: "Dispose bag") {
+//    let disposeBag = DisposeBag()
+//
+//    Observable.never()
+//    .subscribe(
+//        onNext: { print($0) },
+//        onCompleted: { print("Completed") },
+//        onDisposed: { print("Disposed") }
+//    )
+//    .disposed(by: disposeBag)
+//}
+
+//example(of: "Observable that errors") {
+//    let disposeBag = DisposeBag()
+//
+//    enum PickUpLineError: Error {
+//        case nsfw
+//    }
+//
+//    Observable.create{ observer in
+//        observer.onNext(pickUpLineA)
+//        observer.onNext(pickUpLineD)
+//        observer.onError(PickUpLineError.nsfw)
+//        observer.onNext(pickUpLineA)
+//
+//        return Disposables.create()
+//    }
+//    .subscribe(
+//        onNext: { print($0) },
+//        onError: { print("An Error occured: \($0)")}
+//    )
+//    .disposed(by: disposeBag)
+//}
+
+// MARK: RxSwift Subjects
+
+//example(of: "Publish Subject") {
+//    let disposeBag = DisposeBag()
+//
+//    let publishSubject = PublishSubject<String>()
+//
+//   publishSubject.subscribe(
+//            onNext: { print("Subscriber A: \($0)") }
+//        )
+//        .disposed(by: disposeBag)
+//
+//    publishSubject.onNext(pickUpLineA)
+//
+//    publishSubject.subscribe(
+//        onNext: { print("Subscriber B: \($0)") }
+//    )
+//    .disposed(by: disposeBag)
+//
+//    publishSubject.onNext(pickUpLineB)
+//}
+
+//example(of: "Behaviour Subject") {
+//    let disposeBag = DisposeBag()
+//
+//    let behaviorSubject = BehaviorSubject<String>(value: pickUpLineA)
+//
+//   behaviorSubject.subscribe(
+//            onNext: { print("Subscriber A: \($0)") }
+//        )
+//        .disposed(by: disposeBag)
+//
+//    behaviorSubject.onNext(pickUpLineB)
+//
+//    behaviorSubject.subscribe(
+//        onNext: { print("Subscriber B: \($0)") }
+//    )
+//    .disposed(by: disposeBag)
+//
+//    behaviorSubject.onNext(pickUpLineC)
+//}
+
+//example(of: "Replay Subject") {
+//    let disposeBag = DisposeBag()
+//
+//    let replaySubject = ReplaySubject<String>.create(bufferSize: 3)
+//
+//    replaySubject.onNext(pickUpLineA)
+//
+//    replaySubject.subscribe(
+//            onNext: { print("Subscriber A: \($0)") }
+//        )
+//        .disposed(by: disposeBag)
+//
+//    replaySubject.onNext(pickUpLineB)
+//
+//    replaySubject.subscribe(
+//        onNext: { print("Subscriber B: \($0)") }
+//    )
+//    .disposed(by: disposeBag)
+//
+//    replaySubject.onNext(pickUpLineC)
+//}
+
+// MARK: RxSwift Operators
+
+//example(of: "Operators - Filter") {
+//    struct PickUpLine {
+//        let line: String
+//        let successRating: Int
+//    }
+//
+//    let pickUpLines = [
+//        PickUpLine(line: pickUpLineA, successRating: 50),
+//        PickUpLine(line: pickUpLineB, successRating: 23),
+//        PickUpLine(line: pickUpLineC, successRating: 15),
+//        PickUpLine(line: pickUpLineD, successRating: 100)
+//    ]
+//
+//    Observable.from(pickUpLines)
+//        .filter { $0.successRating >= 50}
+//        .subscribe(
+//            onNext: { print($0.line) }
+//        )
+//        .dispose()
+//}
+
+//example(of: "Operators - distinctUntilChanged") {
+//    struct PickUpLine {
+//        let line: String
+//        let successRating: Int
+//    }
+//
+//    let pickUpLines = [
+//        PickUpLine(line: pickUpLineA, successRating: 50),
+//        PickUpLine(line: pickUpLineA, successRating: 50),
+//        PickUpLine(line: pickUpLineB, successRating: 23),
+//        PickUpLine(line: pickUpLineC, successRating: 15),
+//        PickUpLine(line: pickUpLineD, successRating: 100)
+//    ]
+//
+//    Observable.from(pickUpLines)
+//        .distinctUntilChanged {(lineA, lineB) in lineA.line == lineB.line }
+//        .subscribe(
+//            onNext: { print($0.line) }
+//        )
+//        .dispose()
+//}
+
+
+//example(of: "Operators - Map") {
+//    struct PickUpLine {
+//        let line: String
+//        let successRating: Int
+//    }
+//
+//    let pickUpLines: [PickUpLine] = [
+//        PickUpLine(line: pickUpLineA, successRating: 50),
+//        PickUpLine(line: pickUpLineB, successRating: 23),
+//        PickUpLine(line: pickUpLineC, successRating: 15),
+//        PickUpLine(line: pickUpLineD, successRating: 100)
+//    ]
+//
+//    Observable.from(pickUpLines)
+//        .map{ element -> PickUpLine in
+//            if element.successRating < 50 {
+//                let updatedLine = PickUpLine(
+//                    line: element.line, successRating:
+//                    element.successRating + 20
+//                )
+//                return updatedLine
+//            }
+//
+//            return element
+//        }
+//        .subscribe(
+//            onNext: { print("\($0.line): \($0.successRating)") }
+//        )
+//        .dispose()
+//}
+
+//example(of: "Operators - distinctUntilChanged") {
+//    struct PickUpLine {
+//        let line: String
+//        let successRating: Int
+//    }
+//
+//    let pickUpLines = [
+//        PickUpLine(line: pickUpLineA, successRating: 50),
+//        PickUpLine(line: pickUpLineA, successRating: 50),
+//        PickUpLine(line: pickUpLineB, successRating: 23),
+//        PickUpLine(line: pickUpLineC, successRating: 15),
+//        PickUpLine(line: pickUpLineD, successRating: 100)
+//    ]
+//
+//    Observable.from(pickUpLines)
+//        .distinctUntilChanged {(lineA, lineB) in lineA.line == lineB.line }
+//        .subscribe(
+//            onNext: { print($0.line) }
+//        )
+//        .dispose()
+//}
