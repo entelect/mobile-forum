@@ -270,3 +270,67 @@ example(of: "Creating - just operator") {
 //        )
 //        .dispose()
 //}
+
+//example(of: "Operators - Flatmap") {
+//
+//  let disposeBag = DisposeBag()
+//
+//    enum MatchStatus {
+//        case single
+//        case hitched
+//        case basicallyMarried
+//        case couple
+//    }
+//
+//    struct KindlingUser {
+//        let name: String
+//        let matchStatus : BehaviorSubject<MatchStatus>
+//    }
+//
+//
+//    let bob = KindlingUser(name: "Bob", matchStatus: BehaviorSubject<MatchStatus>(value: .single))
+//    let jane = KindlingUser(name: "Jane", matchStatus: BehaviorSubject<MatchStatus>(value: .single))
+//
+//    let kindlingUsers = PublishSubject<KindlingUser>()
+//
+//    kindlingUsers
+//        .flatMap{ $0.matchStatus }
+//        .subscribe(onNext: {
+//            print($0)
+//        })
+//        .disposed(by: disposeBag)
+//
+//    //kindlingUsers.onNext(bob)
+//
+//    //bob.matchStatus.onNext(.hitched)
+//
+//    //kindlingUsers.onNext(jane)
+//
+//    //jane.matchStatus.onNext(.basicallyMarried)
+//}
+
+//example(of: "Operators - merge") {
+//    let observableA = Observable.from([pickUpLineA, pickUpLineB])
+//    let observableB = Observable.from([pickUpLineC, pickUpLineD])
+//
+//
+//    Observable.merge(observableA, observableB)
+//        .subscribe(
+//            onNext: { print($0) }
+//        )
+//        .dispose()
+//}
+
+//example(of: "Operators - merge") {
+//    let observableA = Observable.from([pickUpLineA, pickUpLineB])
+//    let observableB = Observable.from([pickUpLineC, pickUpLineD])
+//
+//
+//    Observable.zip(observableA, observableB){ (a,b) in
+//            "\(a) \(b)"
+//        }
+//        .subscribe(
+//            onNext: { print($0) }
+//        )
+//        .dispose()
+//}
