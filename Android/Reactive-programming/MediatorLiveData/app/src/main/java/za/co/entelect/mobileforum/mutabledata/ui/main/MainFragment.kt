@@ -10,6 +10,7 @@ import androidx.lifecycle.ViewModelProvider
 import kotlinx.android.synthetic.main.main_fragment.*
 import za.co.entelect.mobileforum.mutabledata.R
 
+
 class MainFragment : Fragment() {
 
     companion object {
@@ -44,10 +45,12 @@ class MainFragment : Fragment() {
 
         button_date_change_name_start.setOnClickListener {
             viewModel.startEmittingNames()
+            viewModel.startEmittingPlaces()
         }
 
         button_date_stop.setOnClickListener {
             viewModel.stopEmittingNames()
+            viewModel.stopEmittingPlaces()
         }
     }
 }
