@@ -321,7 +321,7 @@ example(of: "Creating - just operator") {
 //        .dispose()
 //}
 
-//example(of: "Operators - merge") {
+//example(of: "Operators - zip") {
 //    let observableA = Observable.from([pickUpLineA, pickUpLineB])
 //    let observableB = Observable.from([pickUpLineC, pickUpLineD])
 //
