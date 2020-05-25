@@ -36,9 +36,9 @@ class LoveCalculatorPresenter(private val loveCalculatorRepository: ILoveCalcula
                 this@LoveCalculatorPresenter.mainView.handleCurrentResult(it)
                 this@LoveCalculatorPresenter.getData()
             }
-                .onFailure {
+            .onFailure {
                     this@LoveCalculatorPresenter.mainView.showError(it)
-                }
+           }
         }
     }
 
@@ -53,6 +53,7 @@ class LoveCalculatorPresenter(private val loveCalculatorRepository: ILoveCalcula
         }
     }
 
+    //Must stop the job
     override fun stop() {
         job.cancelChildren()
     }

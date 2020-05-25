@@ -55,6 +55,7 @@ class MainActivity : AppCompatActivity(), IMainView {
         }
     }
 
+    //On back press, tell the presenter to stop any network requests
     override fun onStop() {
         presenter.stop()
         super.onStop()

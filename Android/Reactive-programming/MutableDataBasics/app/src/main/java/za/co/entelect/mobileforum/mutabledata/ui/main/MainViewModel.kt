@@ -13,7 +13,7 @@ class MainViewModel : ViewModel() {
 
     //Also has switchMap and DistinctUntilChanged
     val friendlyNameEmitted = Transformations.map(dateNameEmitter) { name ->
-        "Your new date is: " + name
+        "Your new date is: $name"
     }
 
     private var TIMER_NAME = "DateNames";

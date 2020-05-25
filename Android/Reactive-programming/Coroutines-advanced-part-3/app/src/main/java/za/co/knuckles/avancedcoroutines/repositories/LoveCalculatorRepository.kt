@@ -25,6 +25,7 @@ class LoveCalculatorRepository(
 
         // If the network call fails. it will throw an exception
         val result = try {
+            //Call as a normal function
             val response = this@LoveCalculatorRepository.loveApiService.calculateLovePercentage(firstName, secondName)
             this@LoveCalculatorRepository.loveResultsDao.saveResult(
                 LoveResult(

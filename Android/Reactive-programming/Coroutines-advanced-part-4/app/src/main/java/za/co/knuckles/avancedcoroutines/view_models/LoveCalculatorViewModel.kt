@@ -7,6 +7,7 @@ import za.co.knuckles.avancedcoroutines.repositories.ILoveCalculatorRepository
 import za.co.knuckles.avancedcoroutines.view.IMainView
 import kotlin.coroutines.CoroutineContext
 
+//Runs on the main thread by default
 class LoveCalculatorViewModel (private val loveCalculatorRepository: ILoveCalculatorRepository) : ViewModel(),
     ILoveCalculatorViewModel {
 
@@ -34,9 +35,9 @@ class LoveCalculatorViewModel (private val loveCalculatorRepository: ILoveCalcul
                 this@LoveCalculatorViewModel.mainView.handleCurrentResult(it)
                 this@LoveCalculatorViewModel.getData()
             }
-                .onFailure {
-                    this@LoveCalculatorViewModel.mainView.showError(it)
-                }
+            .onFailure {
+                this@LoveCalculatorViewModel.mainView.showError(it)
+            }
         }
     }
 

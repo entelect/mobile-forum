@@ -7,6 +7,7 @@ import retrofit2.http.Query
 import za.co.knuckles.avancedcoroutines.repositories.api.responses.LoveCalculatorResponseModel
 
 interface LoveApiService {
+    //Normal service
     @GET("getPercentage")
     fun calculateLovePercentage(
         @Query("fname") firstName: String,

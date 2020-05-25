@@ -19,20 +19,21 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         val selfieUrl =
-            URL("https://raw.githubusercontent.com/sahilNaran/demos-hosting-images/master/cat_selfie.jpg?token=ABXDFPDPFW3EOFDF4THDL326ZODRA")
+           // URL("https://raw.githubusercontent.com/sahilNaran/demos-hosting-images/master/cat_selfie.jpg?token=ABXDFPDPFW3EOFDF4THDL326ZODRA")
+            URL("https://i.redd.it/vn48q55ev4i31.jpg")
 
         /*
         * 1. Doing background processing on the main(UI) thread
         * */
 
-        val connection = selfieUrl.openConnection()
-        connection.doInput = true // sets the connection to be used for input/download
-        connection.connect()
-
-        val inputSteam = connection.getInputStream()
-        val bitmap = BitmapFactory.decodeStream(inputSteam)
-
-        imageContainer.setImageBitmap(bitmap)
+//        val connection = selfieUrl.openConnection()
+//        connection.doInput = true // sets the connection to be used for input/download
+//        connection.connect()
+//
+//        val inputSteam = connection.getInputStream()
+//        val bitmap = BitmapFactory.decodeStream(inputSteam)
+//
+//        imageContainer.setImageBitmap(bitmap)
 
         /*
         * 2. The above throws android.os.NetworkOnMainThreadException
@@ -63,7 +64,7 @@ class MainActivity : AppCompatActivity() {
         * There's two ways
         * */
 
-//        //Most simply way (needs access to the activity )
+       // Most simply way (needs access to the activity )
 //        Thread(Runnable {
 //            val connection = selfieUrl.openConnection()
 //            connection.doInput = true
@@ -104,6 +105,7 @@ class MainActivity : AppCompatActivity() {
         * Uses default coroutine scope
         * */
 
+//        //Runs on defualt thread pool
 //        Log.d("MainActivityThread", Thread.currentThread().name)
 //        GlobalScope.launch {
 //            Log.d("MainActivityThread", Thread.currentThread().name)
@@ -123,23 +125,23 @@ class MainActivity : AppCompatActivity() {
         /*
         * 3.1 Coroutine scope basics
         * */
-//        Log.d("MainActivityThread", Thread.currentThread().name)
-//        //context = Dispatchers.IO -> GlobalScope.launch(context = Dispatchers.IO)
-//        GlobalScope.launch(Dispatchers.IO) {
-//            Log.d("MainActivityThread", Thread.currentThread().name)
-//            val connection = selfieUrl.openConnection()
-//            connection.doInput = true
-//            connection.connect()
-//
-//            val inputSteam = connection.getInputStream()
-//            val bitmap = BitmapFactory.decodeStream(inputSteam)
-//
-//            //the scope is a coroutine scope, so we can just use launch
-//            launch(Dispatchers.Main) {
-//                Log.d("MainActivityThread", Thread.currentThread().name)
-//                imageContainer.setImageBitmap(bitmap)
-//            }
-//        }
 
+        Log.d("MainActivityThread", Thread.currentThread().name)
+        //context = Dispatchers.IO -> GlobalScope.launch(context = Dispatchers.IO)
+        GlobalScope.launch(Dispatchers.IO) {
+            Log.d("MainActivityThread", Thread.currentThread().name)
+            val connection = selfieUrl.openConnection()
+            connection.doInput = true
+            connection.connect()
+
+            val inputSteam = connection.getInputStream()
+            val bitmap = BitmapFactory.decodeStream(inputSteam)
+
+            //the scope is a coroutine scope, so we can just use launch
+            launch(Dispatchers.Main) {
+                Log.d("MainActivityThread", Thread.currentThread().name)
+                imageContainer.setImageBitmap(bitmap)
+            }
+        }
     }
 }

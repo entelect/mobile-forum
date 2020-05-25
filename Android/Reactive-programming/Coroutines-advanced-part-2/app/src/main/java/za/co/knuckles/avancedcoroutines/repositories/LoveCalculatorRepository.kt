@@ -23,7 +23,9 @@ class LoveCalculatorRepository(
         secondName: String
     ): LoveCalculatorResponseModel = withContext(Dispatchers.IO) {
 
-        val responseDeferred = async{ this@LoveCalculatorRepository.loveApiService.calculateLovePercentage(firstName, secondName).execute()}
+        //Call the sync calculate in a async block
+        val responseDeferred = async{ this@LoveCalculatorRepository.loveApiService.calculateLovePercentage(firstName, secondName)
+            .execute()}
         val response = responseDeferred.await()
         val result = response.body()?.let {
             this@LoveCalculatorRepository.loveResultsDao.saveResult(
@@ -33,6 +35,7 @@ class LoveCalculatorRepository(
                     percentage = it.percentage
                 )
             )
+            //Return
             it
         }
         result ?: LoveCalculatorResponseModel("","","", "") // Define own logic instead of returning this
