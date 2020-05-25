@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		12431CA510336224D1E4D39D /* TextField+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12431B9E5B9B5B8566A127D4 /* TextField+Rx.swift */; };
 		5B6046D15EA47F24AF79BAE9 /* Pods_Kindling.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E84EA266DCAC7B2F5EBEF64D /* Pods_Kindling.framework */; };
 		CF91846E2451DC67007EC23A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF91846D2451DC67007EC23A /* AppDelegate.swift */; };
 		CF9184702451DC67007EC23A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF91846F2451DC67007EC23A /* SceneDelegate.swift */; };
@@ -48,6 +49,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		12431B9E5B9B5B8566A127D4 /* TextField+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TextField+Rx.swift"; sourceTree = "<group>"; };
 		199EA5C108B44F952015E82E /* Pods-Kindling.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kindling.debug.xcconfig"; path = "Target Support Files/Pods-Kindling/Pods-Kindling.debug.xcconfig"; sourceTree = "<group>"; };
 		454EBA0EA617D47E55A3D6DF /* Pods-KindlingTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KindlingTests.release.xcconfig"; path = "Target Support Files/Pods-KindlingTests/Pods-KindlingTests.release.xcconfig"; sourceTree = "<group>"; };
 		4DC973EFF032C105B0E4D0A0 /* Pods_KindlingTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KindlingTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -247,6 +249,7 @@
 				CF9184B22452367E007EC23A /* IntExtensions.swift */,
 				CF93062C24530BB90046D3C0 /* AlertExtensions.swift */,
 				CFA076402457370D006E7632 /* UIImageViewExtensions.swift */,
+				12431B9E5B9B5B8566A127D4 /* TextField+Rx.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -480,6 +483,7 @@
 				CF93062B2452FBC20046D3C0 /* DashboardViewController.swift in Sources */,
 				CF9184702451DC67007EC23A /* SceneDelegate.swift in Sources */,
 				CF9184AC245224D3007EC23A /* LoginService.swift in Sources */,
+				12431CA510336224D1E4D39D /* TextField+Rx.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
