@@ -4,13 +4,15 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import kotlinx.coroutines.*
 import kotlinx.coroutines.flow.Flow
+import kotlinx.coroutines.flow.collect
 import kotlinx.coroutines.flow.flowOf
 import za.co.knuckles.kotlinflow.repositories.ILoveCalculatorRepository
 import za.co.knuckles.kotlinflow.repositories.database.models.LoveResult
 import za.co.knuckles.kotlinflow.view.IMainView
 
 //Runs on the main thread by default
-class LoveCalculatorViewModel (private val loveCalculatorRepository: ILoveCalculatorRepository) : ViewModel(),
+class LoveCalculatorViewModel(private val loveCalculatorRepository: ILoveCalculatorRepository) :
+    ViewModel(),
     ILoveCalculatorViewModel {
 
     private lateinit var mainView: IMainView
@@ -24,12 +26,12 @@ class LoveCalculatorViewModel (private val loveCalculatorRepository: ILoveCalcul
         this.mainView = mainView
     }
 
-    override var previousResultsUsingFlow: Flow<List<LoveResult>>
-    = loveCalculatorRepository.getPreviousLoveCalculations()
+    override var previousResultsUsingFlow: Flow<List<LoveResult>> =
+        loveCalculatorRepository.getPreviousLoveCalculations()
 
     override fun calculateLovePercentage(firstName: String, secondName: String) {
 
-         viewModelScope.launch(coroutineExceptionHandler) {
+        viewModelScope.launch(coroutineExceptionHandler) {
             val result = runCatching {
                 this@LoveCalculatorViewModel.loveCalculatorRepository.calculateLovePercentage(
                     firstName,
@@ -39,21 +41,17 @@ class LoveCalculatorViewModel (private val loveCalculatorRepository: ILoveCalcul
 
             result.onSuccess {
                 this@LoveCalculatorViewModel.mainView.handleCurrentResult(it)
-                this@LoveCalculatorViewModel.getData()
             }
-            .onFailure {
-                this@LoveCalculatorViewModel.mainView.showError(it)
-            }
+                .onFailure {
+                    this@LoveCalculatorViewModel.mainView.showError(it)
+                }
         }
     }
 
     override fun getData() {
-        viewModelScope.launch(coroutineExceptionHandler) {
-
-            val result = runCatching {
-                this@LoveCalculatorViewModel.loveCalculatorRepository.getPreviousLoveCalculations() }
-            result.onSuccess {
-             //   this@LoveCalculatorViewModel.mainView.showPreviousResults(it)
+        viewModelScope.launch() {
+            previousResultsUsingFlow.collect { result ->
+                this@LoveCalculatorViewModel.mainView.showPreviousResults(result)
             }
         }
     }

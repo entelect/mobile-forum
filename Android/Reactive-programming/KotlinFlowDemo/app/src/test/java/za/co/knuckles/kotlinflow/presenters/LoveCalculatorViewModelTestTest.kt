@@ -9,6 +9,7 @@ import com.nhaarman.mockitokotlin2.mock
 import com.nhaarman.mockitokotlin2.verify
 import com.nhaarman.mockitokotlin2.whenever
 import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.flow.flowOf
 import kotlinx.coroutines.test.TestCoroutineDispatcher
 import kotlinx.coroutines.test.TestCoroutineScope
 import kotlinx.coroutines.test.runBlockingTest
@@ -32,7 +33,7 @@ class LoveCalculatorViewModelTestTest {
     private val coroutineScope = TestCoroutineScope(dispatcher)
 
     @Before
-    fun setUp(){ //runs before each test
+    fun setUp() { //runs before each test
         PowerMockito.mockStatic(Log::class.java)
 
         Dispatchers.setMain(dispatcher)
@@ -41,9 +42,9 @@ class LoveCalculatorViewModelTestTest {
     }
 
     @Test
-    fun testGetPreviousResults() = coroutineScope.runBlockingTest{
+    fun testGetPreviousResults() = coroutineScope.runBlockingTest {
         // Arrange
-        //whenever(repository.getPreviousLoveCalculations()).thenReturn(listOf())
+        whenever(repository.getPreviousLoveCalculations()).thenReturn(flowOf())
 
         // Act
         calculatorViewModel.getData()
