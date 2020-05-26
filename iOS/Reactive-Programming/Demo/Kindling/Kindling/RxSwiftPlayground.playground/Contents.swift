@@ -153,7 +153,7 @@ example(of: "Creating - just operator") {
 //example(of: "Replay Subject") {
 //    let disposeBag = DisposeBag()
 //
-//    let replaySubject = ReplaySubject<String>.create(bufferSize: 3)
+//    let replaySubject = ReplaySubject<String>.create(bufferSize: 3) // Change buffer to 2
 //
 //    replaySubject.onNext(pickUpLineA)
 //
@@ -163,13 +163,14 @@ example(of: "Creating - just operator") {
 //        .disposed(by: disposeBag)
 //
 //    replaySubject.onNext(pickUpLineB)
+//    replaySubject.onNext(pickUpLineC)
 //
 //    replaySubject.subscribe(
 //        onNext: { print("Subscriber B: \($0)") }
 //    )
 //    .disposed(by: disposeBag)
 //
-//    replaySubject.onNext(pickUpLineC)
+//    replaySubject.onNext(pickUpLineD)
 //}
 
 // MARK: RxSwift Operators
@@ -300,13 +301,19 @@ example(of: "Creating - just operator") {
 //        })
 //        .disposed(by: disposeBag)
 //
-//    //kindlingUsers.onNext(bob)
+//    kindlingUsers.onNext(bob)
+////    kindlingUsers.onNext(jane)
+////
+////    print("Updating Bob's status")
+////    bob.matchStatus.onNext(.hitched)
 //
-//    //bob.matchStatus.onNext(.hitched)
+////    print("Updating Jane's status")
+////    jane.matchStatus.onNext(.basicallyMarried)
+////
+////    print("Updating Bob's status")
+////    bob.matchStatus.onNext(.single)
 //
-//    //kindlingUsers.onNext(jane)
-//
-//    //jane.matchStatus.onNext(.basicallyMarried)
+//    // Flat maps are useful for multiple streams of the same type.
 //}
 
 //example(of: "Operators - merge") {
@@ -327,7 +334,7 @@ example(of: "Creating - just operator") {
 //
 //
 //    Observable.zip(observableA, observableB){ (a,b) in
-//            "\(a) \(b)"
+//            "\(a) | \(b)"
 //        }
 //        .subscribe(
 //            onNext: { print($0) }
