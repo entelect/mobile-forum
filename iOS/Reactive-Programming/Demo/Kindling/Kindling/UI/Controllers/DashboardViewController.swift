@@ -83,11 +83,6 @@ class DashboardViewController: UIViewController {
         performSegue(withIdentifier: "showUserProfile", sender: self)
     }
 
-    func ProfileTapped() {
-        DDLogInfo("User viewing profile")
-        performSegue(withIdentifier: "showUserProfile", sender: self)
-    }
-
     private func displayMatch(_ match: KindlingUser) {
         profileImageView.image = nil
         profileImageView.load(url: match.imageUrl)

@@ -51,20 +51,20 @@ class LoginViewController: UIViewController {
 //        }).disposed(by: disposeBag)
 
         // TODO: 2 - Uncomment this
-        let emailAddress = emailAddressTextField.rx.text.asDriver()
-                .skip(1)
-                .distinctUntilChanged()
-                .debounce(.milliseconds(500))
-
-        let emailAddressIsValid = emailAddress.map { [unowned self] email -> Bool in
-            self.validateEmailAddress(emailAddress: email)
-        }
-
-        emailAddressIsValid.drive(emailAddressTextField.rx.isValid)
-                .disposed(by: disposeBag)
-
-        emailAddressIsValid.drive(onNext: { isValid in self.emailErrorLabel.isHidden = isValid })
-                .disposed(by: disposeBag)
+//        let emailAddress = emailAddressTextField.rx.text.asDriver()
+//                .skip(1)
+//                .distinctUntilChanged()
+//                .debounce(.milliseconds(500))
+//
+//        let emailAddressIsValid = emailAddress.map { [unowned self] email -> Bool in
+//            self.validateEmailAddress(emailAddress: email)
+//        }
+//
+//        emailAddressIsValid.drive(emailAddressTextField.rx.isValid)
+//                .disposed(by: disposeBag)
+//
+//        emailAddressIsValid.drive(emailErrorLabel.rx.isHidden)
+//                .disposed(by: disposeBag)
 
 
         // TODO: 3: uncomment this
@@ -78,7 +78,7 @@ class LoginViewController: UIViewController {
 //                .distinctUntilChanged()
 //                .debounce(.milliseconds(500))
 //
-//        let passwordIsValid = password.map { [unowned self] (password: String?) -> Bool in
+//        let passwordIsValid = password.map { (password: String?) -> Bool in
 //            guard let password = password, !password.isEmpty else {
 //                return false
 //            }
