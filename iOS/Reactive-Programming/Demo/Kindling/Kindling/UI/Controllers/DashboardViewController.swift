@@ -38,6 +38,7 @@ class DashboardViewController: UIViewController {
         let user = InMemoryDatabase.sharedDatabase.currentUser
         matchingService = MatchingService(for: user)
 
+        // TODO: 1. comment this out
         for match in user.matchingProfiles {
             matches.append(match)
         }
@@ -47,19 +48,19 @@ class DashboardViewController: UIViewController {
             displayMatch(matches[currentMatchIndex])
         }
 
-        //TODO profile card tap gesture recognizer
+        // TODO: 2  uncomment this
         setupTapGestureRecognizer()
 //        profileCard.rx.tapGesture().bind(onNext: { [unowned self] _ in
 //            self.profileCard.isUserInteractionEnabled = true
 //            self.onProfileTapped()
 //        }).disposed(by: disposeBag)
 
-        // TODO: Swipe right to add to matches, swipe left to load new
+        // TODO: 3  uncomment this
 //        profileCard.rx.swipeGesture([.left, .right]).bind (onNext: { [unowned self] _ in
 //            self.getNewMatch()
 //        }).disposed(by: disposeBag)
 
-        // TODO matching service
+        // TODO: 1. uncomment this
 //        matchingService.matches.asDriver(onErrorDriveWith: .empty())
 //                .drive(self.rx.profileData)
 //                .disposed(by: disposeBag)
@@ -121,12 +122,14 @@ class DashboardViewController: UIViewController {
     }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // TODO: 1. uncomment this
 //        guard let match = currentMatch else {
 //            return
 //        }
         if let segueIdentifier = segue.identifier, segueIdentifier == "showUserProfile" {
             if let navController = segue.destination as? UINavigationController, let controller = navController.topViewController as? KindlingProfileViewController {
                 controller.profile = matches[currentMatchIndex]
+                // TODO: 1. uncomment this
                 //controller.profile = match
             }
 
