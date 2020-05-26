@@ -20,6 +20,7 @@ class LoginViewController: UIViewController {
 
     private let loginService: LoginService = StubLoginService()
 
+    // TODO : 1 - Comment this out
     @IBAction func onLoginButtonTapped(_ sender: UIBarButtonItem) {
          self.login()
     }
@@ -44,12 +45,12 @@ class LoginViewController: UIViewController {
         emailAddressTextField.setBorder(color: .gray)
         passwordTextField.setBorder(color: .gray)
 
-        // TODO: Login button rxTap
+        // TODO : 1 - Uncomment this
 //        loginButton.rx.tap.bind(onNext: { [unowned self] in
 //            self.login()
 //        }).disposed(by: disposeBag)
 
-        // TODO: Email Validation
+        // TODO: 2 - Uncomment this
 //        let emailAddress = emailAddressTextField.rx.text.asDriver()
 //                .skip(1)
 //                .distinctUntilChanged()
@@ -66,19 +67,18 @@ class LoginViewController: UIViewController {
 //                .disposed(by: disposeBag)
     }
 
-    // TODO: Email Validation
-//    private func validateEmailAddress(emailAddress: String?) -> Bool {
-//        guard let emailAddress = emailAddress,
-//              !emailAddress.isEmpty else {
-//            return true
-//        }
-//
-//        if emailAddress.range(of: "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}", options: .regularExpression) == nil {
-//            return false
-//        }
-//
-//        return true
-//    }
+    private func validateEmailAddress(emailAddress: String?) -> Bool {
+        guard let emailAddress = emailAddress,
+              !emailAddress.isEmpty else {
+            return true
+        }
+
+        if emailAddress.range(of: "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}", options: .regularExpression) == nil {
+            return false
+        }
+
+        return true
+    }
 
     private func login() {
         guard let email = emailAddressTextField.text, let password = passwordTextField.text else {
