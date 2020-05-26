@@ -65,6 +65,12 @@ class LoginViewController: UIViewController {
 //
 //        emailAddressIsValid.drive(onNext: { isValid in self.emailErrorLabel.isHidden = isValid })
 //                .disposed(by: disposeBag)
+
+
+    // TODO: 3: uncomment this
+//        passwordTextField.rx.controlEvent(.editingDidEndOnExit)
+//                .bind(onNext: login)
+//                .disposed(by: disposeBag)
     }
 
     private func validateEmailAddress(emailAddress: String?) -> Bool {
