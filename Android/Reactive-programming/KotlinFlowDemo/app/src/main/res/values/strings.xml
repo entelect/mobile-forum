@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">KindlingLoveCalculator</string>
+    <string name="percentage_result">%1$s \%%</string>
+</resources>
