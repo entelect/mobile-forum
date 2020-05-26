@@ -22,7 +22,7 @@ class LoginViewController: UIViewController {
 
     // TODO : 1 - Comment this out
     @IBAction func onLoginButtonTapped(_ sender: UIBarButtonItem) {
-         self.login()
+        self.login()
     }
 
     private func proceedToDashboard() {
@@ -51,25 +51,48 @@ class LoginViewController: UIViewController {
 //        }).disposed(by: disposeBag)
 
         // TODO: 2 - Uncomment this
-//        let emailAddress = emailAddressTextField.rx.text.asDriver()
+        let emailAddress = emailAddressTextField.rx.text.asDriver()
+                .skip(1)
+                .distinctUntilChanged()
+                .debounce(.milliseconds(500))
+
+        let emailAddressIsValid = emailAddress.map { [unowned self] email -> Bool in
+            self.validateEmailAddress(emailAddress: email)
+        }
+
+        emailAddressIsValid.drive(emailAddressTextField.rx.isValid)
+                .disposed(by: disposeBag)
+
+        emailAddressIsValid.drive(onNext: { isValid in self.emailErrorLabel.isHidden = isValid })
+                .disposed(by: disposeBag)
+
+
+        // TODO: 3: uncomment this
+//        passwordTextField.rx.controlEvent(.editingDidEndOnExit)
+//                .bind(onNext: login)
+//                .disposed(by: disposeBag)
+
+        // TODO: 4 uncomment this
+//        let password = passwordTextField.rx.text.asDriver()
 //                .skip(1)
 //                .distinctUntilChanged()
 //                .debounce(.milliseconds(500))
 //
-//        let emailAddressIsValid = emailAddress.map { [unowned self] email -> Bool in
-//            self.validateEmailAddress(emailAddress: email)
+//        let passwordIsValid = password.map { [unowned self] (password: String?) -> Bool in
+//            guard let password = password, !password.isEmpty else {
+//                return false
+//            }
+//            return true
 //        }
 //
-//        emailAddressIsValid.drive(emailAddressTextField.rx.isValid)
-//                .disposed(by: disposeBag)
+//        let inputValid = Driver.combineLatest(
+//                emailAddressIsValid,
+//                passwordIsValid,
+//                resultSelector: { $0 && $1 }
+//        )
 //
-//        emailAddressIsValid.drive(onNext: { isValid in self.emailErrorLabel.isHidden = isValid })
-//                .disposed(by: disposeBag)
-
-
-    // TODO: 3: uncomment this
-//        passwordTextField.rx.controlEvent(.editingDidEndOnExit)
-//                .bind(onNext: login)
+//        Driver<Bool>.merge(Driver<Bool>.just(false), inputValid)
+//                .drive(loginButton.rx.isEnabled)
 //                .disposed(by: disposeBag)
     }
 
@@ -102,4 +125,12 @@ class LoginViewController: UIViewController {
         }
     }
 
+}
+
+fileprivate extension Reactive where Base: UIBarButtonItem {
+    var isEnabled: Binder<Bool> {
+        Binder(base.self) { button, isEnabled in
+            button.isEnabled = isEnabled
+        }
+    }
 }
