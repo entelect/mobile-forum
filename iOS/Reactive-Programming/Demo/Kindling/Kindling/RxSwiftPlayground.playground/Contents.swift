@@ -2,12 +2,12 @@
 import RxSwift
 
 // MARK: RxSwift Basics
-example(of: "Creating - just operator") {
-    Observable.just(pickUpLineA)
-        .subscribe {
-            print($0)
-    }.dispose()
-}
+//example(of: "Creating - just operator") {
+//    Observable.just(pickUpLineA)
+//        .subscribe {
+//            print($0)
+//    }.dispose()
+//}
 
 //example(of: "Creating - of operator") {
 //    Observable.of(pickUpLineA, pickUpLineB, pickUpLineC)
@@ -122,12 +122,12 @@ example(of: "Creating - just operator") {
 //
 //    publishSubject.onNext(pickUpLineA)
 //
-//    publishSubject.subscribe(
-//        onNext: { print("Subscriber B: \($0)") }
-//    )
-//    .disposed(by: disposeBag)
+////    publishSubject.subscribe(
+////        onNext: { print("Subscriber B: \($0)") }
+////    )
+////    .disposed(by: disposeBag)
 //
-//    publishSubject.onNext(pickUpLineB)
+////    publishSubject.onNext(pickUpLineB)
 //}
 
 //example(of: "Behaviour Subject") {
@@ -140,14 +140,14 @@ example(of: "Creating - just operator") {
 //        )
 //        .disposed(by: disposeBag)
 //
-//    behaviorSubject.onNext(pickUpLineB)
+////    behaviorSubject.onNext(pickUpLineB)
 //
-//    behaviorSubject.subscribe(
-//        onNext: { print("Subscriber B: \($0)") }
-//    )
-//    .disposed(by: disposeBag)
+////    behaviorSubject.subscribe(
+////        onNext: { print("Subscriber B: \($0)") }
+////    )
+////    .disposed(by: disposeBag)
 //
-//    behaviorSubject.onNext(pickUpLineC)
+////    behaviorSubject.onNext(pickUpLineC)
 //}
 
 //example(of: "Replay Subject") {
@@ -162,15 +162,15 @@ example(of: "Creating - just operator") {
 //        )
 //        .disposed(by: disposeBag)
 //
-//    replaySubject.onNext(pickUpLineB)
-//    replaySubject.onNext(pickUpLineC)
+////    replaySubject.onNext(pickUpLineB)
+////    replaySubject.onNext(pickUpLineC)
 //
-//    replaySubject.subscribe(
-//        onNext: { print("Subscriber B: \($0)") }
-//    )
-//    .disposed(by: disposeBag)
+////    replaySubject.subscribe(
+////        onNext: { print("Subscriber B: \($0)") }
+////    )
+////    .disposed(by: disposeBag)
 //
-//    replaySubject.onNext(pickUpLineD)
+////    replaySubject.onNext(pickUpLineD)
 //}
 
 // MARK: RxSwift Operators
