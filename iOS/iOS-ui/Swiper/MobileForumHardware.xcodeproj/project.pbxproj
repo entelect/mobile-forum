@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		265C49DB24A226130087BDD1 /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265C49DA24A226130087BDD1 /* Test.swift */; };
+		261E1EC524A381E900937D89 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261E1EC424A381E900937D89 /* UIView+Extensions.swift */; };
+		2622385724A36DAB00646B5C /* CounterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2622385624A36DAB00646B5C /* CounterView.xib */; };
+		2622385924A36DB900646B5C /* CounterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2622385824A36DB900646B5C /* CounterView.swift */; };
 		26CC8B242459D01000762010 /* KeyChainAuthentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26CC8B232459D01000762010 /* KeyChainAuthentication.swift */; };
 		26CC8BCA2459F61800762010 /* LandingTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26CC8BC92459F61800762010 /* LandingTabBarController.swift */; };
 		26CC8BCD2459F86000762010 /* LAContext+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26CC8BCC2459F86000762010 /* LAContext+Extensions.swift */; };
@@ -50,7 +52,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		265C49DA24A226130087BDD1 /* Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
+		261E1EC424A381E900937D89 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		2622385624A36DAB00646B5C /* CounterView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CounterView.xib; sourceTree = "<group>"; };
+		2622385824A36DB900646B5C /* CounterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterView.swift; sourceTree = "<group>"; };
 		26CC8B232459D01000762010 /* KeyChainAuthentication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyChainAuthentication.swift; sourceTree = "<group>"; };
 		26CC8BC92459F61800762010 /* LandingTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingTabBarController.swift; sourceTree = "<group>"; };
 		26CC8BCC2459F86000762010 /* LAContext+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LAContext+Extensions.swift"; sourceTree = "<group>"; };
@@ -119,6 +123,8 @@
 				26CC8D43246013BB00762010 /* NameView.swift */,
 				26E991212473ABB900351864 /* DateSpotView.swift */,
 				26E991232473ABC700351864 /* DateSpotView.xib */,
+				2622385624A36DAB00646B5C /* CounterView.xib */,
+				2622385824A36DB900646B5C /* CounterView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -131,6 +137,7 @@
 				26CC8D51246033CA00762010 /* UIColor+Extensions.swift */,
 				26CC8D53246040F300762010 /* UIViewController+Extensions.swift */,
 				26E991F12473F09600351864 /* Double+Extensions.swift */,
+				261E1EC424A381E900937D89 /* UIView+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -182,7 +189,6 @@
 				26E890EA2462D38D00DA9E03 /* Swipes */,
 				26E890E82462D36000DA9E03 /* DateMap */,
 				26E890E92462D38600DA9E03 /* MyProfile */,
-				265C49DA24A226130087BDD1 /* Test.swift */,
 			);
 			path = Landing;
 			sourceTree = "<group>";
@@ -346,6 +352,7 @@
 				ED747BEF24589E3D005BE3D5 /* LaunchScreen.storyboard in Resources */,
 				26E98E76246D42EF00351864 /* art.scnassets in Resources */,
 				ED747BEC24589E3D005BE3D5 /* Assets.xcassets in Resources */,
+				2622385724A36DAB00646B5C /* CounterView.xib in Resources */,
 				26E991242473ABC700351864 /* DateSpotView.xib in Resources */,
 				ED747BEA24589E3A005BE3D5 /* Main.storyboard in Resources */,
 			);
@@ -384,11 +391,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				26E890E52462D14B00DA9E03 /* LoginViewController+Biometrics.swift in Sources */,
+				2622385924A36DB900646B5C /* CounterView.swift in Sources */,
 				26E991F42474024800351864 /* BackgroundLocation.swift in Sources */,
 				ED747BE724589E3A005BE3D5 /* LoginViewController.swift in Sources */,
 				26CC8BCA2459F61800762010 /* LandingTabBarController.swift in Sources */,
 				26CC8BCD2459F86000762010 /* LAContext+Extensions.swift in Sources */,
 				26CC8D5824618A8200762010 /* DateSpotFinderViewController.swift in Sources */,
+				261E1EC524A381E900937D89 /* UIView+Extensions.swift in Sources */,
 				26E88F9B246297AD00DA9E03 /* MyProfileItem.swift in Sources */,
 				26CC8BCF245ACB1200762010 /* SwipeViewController.swift in Sources */,
 				26CC8D4224600E3E00762010 /* AvatarView.swift in Sources */,
@@ -404,7 +413,6 @@
 				26CC8D46246013EF00762010 /* UserView.swift in Sources */,
 				26E991F02473E3D900351864 /* CoreMotionViewController.swift in Sources */,
 				26CC8BD1245ACB5800762010 /* SwipeView.swift in Sources */,
-				265C49DB24A226130087BDD1 /* Test.swift in Sources */,
 				ED747BE524589E3A005BE3D5 /* SceneDelegate.swift in Sources */,
 				26E88F9524628BF600DA9E03 /* DatingSpot.swift in Sources */,
 				26E88F992462979B00DA9E03 /* MyProfileGroup.swift in Sources */,

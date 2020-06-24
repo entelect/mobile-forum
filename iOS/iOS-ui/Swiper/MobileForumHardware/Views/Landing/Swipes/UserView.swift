@@ -17,16 +17,9 @@ struct UserView: View {
         GeometryReader { geometry in
             return ZStack(alignment: .leading) {
                 AvatarView(url: self.user.profileImage).zIndex(0)
-                    
-                Text("\(self.userViewModel.superLikes)")
-                    .foregroundColor(.white)
-                    .padding()
-                    .background(
-                        Color.red
-                            .blur(radius: 6, opaque: true)
-                            .opacity(0.8)
-                    )
-                    .clipShape(Circle())
+
+                CounterSwiftUIView(count: self.$userViewModel.superLikes)
+                    .frame(width: 50, height: 50)
                     .position(x: geometry.size.width - 40, y: 40)
                     .zIndex(2)
                 
