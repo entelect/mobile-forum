@@ -1,7 +1,8 @@
-package za.co.entelect.kindling
+package za.co.entelect.kindling.sharedelement
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import za.co.entelect.kindling.R
 
 class SharedElementExampleActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

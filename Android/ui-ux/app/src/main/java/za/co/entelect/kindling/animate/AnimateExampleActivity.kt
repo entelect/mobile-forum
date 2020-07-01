@@ -1,10 +1,10 @@
-package za.co.entelect.kindling
+package za.co.entelect.kindling.animate
 
-import android.animation.ObjectAnimator
 import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_animate_example.*
+import za.co.entelect.kindling.R
 
 class AnimateExampleActivity : AppCompatActivity() {
 

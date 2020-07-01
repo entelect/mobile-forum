@@ -4,6 +4,10 @@ import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
+import za.co.entelect.kindling.animate.AnimateExampleActivity
+import za.co.entelect.kindling.motionlayout.MotionLayoutExampleActivity
+import za.co.entelect.kindling.sharedelement.SharedElementExampleActivity
+import za.co.entelect.kindling.transition.TransitionExampleActivity
 
 class MainActivity : AppCompatActivity() {
 
@@ -13,14 +17,18 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun onSharedElementExampleTapped(view: View) {
-
+        startActivity(Intent(this, SharedElementExampleActivity::class.java))
     }
 
     fun onMotionLayoutExampleTapped(view: View) {
-
+        startActivity(Intent(this, MotionLayoutExampleActivity::class.java))
     }
 
-    fun onAnimateOptionTapped(view: View) {
+    fun onAnimateExampleTapped(view: View) {
         startActivity(Intent(this, AnimateExampleActivity::class.java))
+    }
+
+    fun onTransitionExampleTapped(view: View) {
+        startActivity(Intent(this, TransitionExampleActivity::class.java))
     }
 }

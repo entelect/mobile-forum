@@ -5,4 +5,6 @@
     <string name="shared_element_example">Shared Element Example</string>
     <string name="hide">Hide</string>
     <string name="show">Show</string>
+    <string name="next_screen">Next screen</string>
+    <string name="transition_example">Transition example</string>
 </resources>

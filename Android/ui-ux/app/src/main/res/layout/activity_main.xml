@@ -7,6 +7,19 @@
     tools:context=".MainActivity">
 
     <com.google.android.material.button.MaterialButton
+        android:id="@+id/transition_example"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onTransitionExampleTapped"
+        android:text="@string/transition_example"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/animate_example" />
+
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/shared_element_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -14,6 +27,7 @@
         android:text="@string/shared_element_example"
         app:layout_constraintBottom_toTopOf="@+id/motion_layout_example"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -26,6 +40,7 @@
         android:text="@string/motionlayout_example"
         app:layout_constraintBottom_toTopOf="@+id/animate_example"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/shared_element_button" />
 
@@ -34,10 +49,11 @@
         style="@style/CustomTextButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="onAnimateOptionTapped"
+        android:onClick="onAnimateExampleTapped"
         android:text="@string/animate_example"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/transition_example"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/motion_layout_example" />
 
