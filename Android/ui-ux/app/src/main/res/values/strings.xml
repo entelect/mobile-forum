@@ -3,4 +3,6 @@
     <string name="animate_example">Animate Example</string>
     <string name="motionlayout_example">MotionLayout Example</string>
     <string name="shared_element_example">Shared Element Example</string>
+    <string name="hide">Hide</string>
+    <string name="show">Show</string>
 </resources>

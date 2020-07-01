@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".SharedElementExampleActivity"></activity>
+        <activity android:name=".AnimateExampleActivity"></activity>
+        <activity android:name=".SharedElementExampleActivity" />
         <activity android:name=".MotionLayoutExampleActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
