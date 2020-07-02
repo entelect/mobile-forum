@@ -36,6 +36,17 @@ struct AvatarView: View {
 
 struct AvatarView_Previews: PreviewProvider {
     static var previews: some View {
-        AvatarView(url: "https://picsum.photos/400")
+        Group {
+            AvatarView(url: "https://picsum.photos/400")
+                .environment(\.colorScheme, .light)
+                .previewDisplayName("Light mode")
+                .padding()
+            
+            AvatarView(url: "https://picsum.photos/400")
+                .environment(\.colorScheme, .dark)
+                .previewDisplayName("Dark mode")
+                .padding()
+                .background(Color.black)
+        }.previewLayout(.sizeThatFits)
     }
 }

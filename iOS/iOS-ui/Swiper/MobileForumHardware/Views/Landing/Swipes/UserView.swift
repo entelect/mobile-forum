@@ -53,7 +53,18 @@ struct UserView: View {
 
 struct UserView_Previews: PreviewProvider {
     static var previews: some View {
-        UserView(user: User(email: "", password: "", name: "Pietie", surname: "Pompies", profileImage: "https://picsum.photos/400", age: 20, gender: .male))
+        Group {
+            UserView(user: User(email: "", password: "", name: "Pietie", surname: "Pompies", profileImage: "https://picsum.photos/400", age: 20, gender: .male))
+                .environment(\.colorScheme, .light)
+                .previewDisplayName("Light mode")
+                .padding()
+            
+            UserView(user: User(email: "", password: "", name: "Pietie", surname: "Pompies", profileImage: "https://picsum.photos/400", age: 20, gender: .male))
+                .environment(\.colorScheme, .dark)
+                .previewDisplayName("Dark mode")
+                .padding()
+                .background(Color.black)
+        }.previewLayout(.sizeThatFits)
     }
 }
 

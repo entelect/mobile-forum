@@ -24,3 +24,8 @@ import PlaygroundSupport
 //let flowerView = FlowerUIView(frame: CGRect(x: 0, y: 0, width: 400, height: 400))
 //PlaygroundPage.current.liveView = flowerView
 //PlaygroundPage.current.needsIndefiniteExecution = true
+
+
+// MARK: - Dark mode colors
+
+DefaultStyle.Colors.label

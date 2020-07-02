@@ -31,6 +31,17 @@ struct NameView: View {
 
 struct NameView_Previews: PreviewProvider {
     static var previews: some View {
-        NameView(name: "Piet Pompies", age: 20, gender: "Male")
+        Group {
+            NameView(name: "Piet Pompies", age: 20, gender: "Male")
+                .environment(\.colorScheme, .light)
+                .previewDisplayName("Light mode")
+                .padding()
+            
+            NameView(name: "Piet Pompies", age: 20, gender: "Male")
+                .environment(\.colorScheme, .dark)
+                .previewDisplayName("Dark mode")
+                .padding()
+                .background(Color.black)
+        }.previewLayout(.sizeThatFits)
     }
 }
