@@ -1,14 +1,16 @@
 import UIKit
 
 public class FlowerUIView: UIView {
-    var petalOffset: Double = -20
-    var petalWidth: Double = 100
+    private var petalOffset: Double = -40
+    private var petalWidth: Double = 100
     
-    override public init(frame: CGRect) {
-        super.init(frame: frame)
+    public init() {
+        super.init(frame: .zero)
+        self.contentMode = .redraw
         self.backgroundColor = .white
     }
     
+    @available(*, unavailable)
     required public init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
@@ -26,5 +28,15 @@ public class FlowerUIView: UIView {
         UIColor.red.setFill()
         bezierPath.usesEvenOddFillRule = true
         bezierPath.fill()
+    }
+    
+    public func configure(petalOffset: Double) {
+        self.petalOffset = petalOffset
+        self.setNeedsDisplay()
+    }
+    
+    public func configure(petalWidth: Double) {
+        self.petalWidth = petalWidth
+        self.setNeedsDisplay()
     }
 }

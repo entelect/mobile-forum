@@ -20,12 +20,12 @@ import PlaygroundSupport
 
 
 // MARK: - UIKit
-// MARK: Custom Drawing
-//let flowerView = FlowerUIView(frame: CGRect(x: 0, y: 0, width: 400, height: 400))
-//PlaygroundPage.current.liveView = flowerView
-//PlaygroundPage.current.needsIndefiniteExecution = true
+// MARK: Custom Drawing & Autolayout
+let customDrawingView = UIKitCustomDrawingViewController()
+PlaygroundPage.current.liveView = customDrawingView
+PlaygroundPage.current.needsIndefiniteExecution = true
 
 
 // MARK: - Dark mode colors
 
-DefaultStyle.Colors.label
+//DefaultStyle.Colors.label
