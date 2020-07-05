@@ -16,7 +16,6 @@
             android:theme="@style/AppTheme.Custom" />
         <activity android:name=".transition.TransitionExampleActivity" />
         <activity android:name=".animate.AnimateExampleActivity" />
-        <activity android:name=".sharedelement.SharedElementExampleActivity" />
         <activity android:name=".motionlayout.MotionLayoutExampleActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
