@@ -33,7 +33,7 @@
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/motion_layout_example"
-        style="@style/CustomOutlineButton"
+        style="@style/OutlineButton.Custom"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="onMotionLayoutExampleTapped"
@@ -46,7 +46,7 @@
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/animate_example"
-        style="@style/CustomTextButton"
+        style="@style/TextButton.Custom"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="onAnimateExampleTapped"
