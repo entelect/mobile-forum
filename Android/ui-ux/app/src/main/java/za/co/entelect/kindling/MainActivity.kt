@@ -49,7 +49,8 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun updateDarkModeState() {
-        AppCompatDelegate.setDefaultNightMode(if (darkModeEnabled) MODE_NIGHT_YES else MODE_NIGHT_NO)
+        val mode = if (darkModeEnabled) MODE_NIGHT_YES else MODE_NIGHT_NO
+        AppCompatDelegate.setDefaultNightMode(mode)
     }
 
     private fun wasDarkModeEnabled(savedInstanceState: Bundle?) =
