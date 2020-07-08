@@ -10,6 +10,7 @@
 		261E1EC524A381E900937D89 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261E1EC424A381E900937D89 /* UIView+Extensions.swift */; };
 		2622385724A36DAB00646B5C /* CounterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2622385624A36DAB00646B5C /* CounterView.xib */; };
 		2622385924A36DB900646B5C /* CounterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2622385824A36DB900646B5C /* CounterView.swift */; };
+		26772B0D24B593D9003FB1A4 /* DemoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26772B0C24B593D9003FB1A4 /* DemoView.xib */; };
 		26CC8B242459D01000762010 /* KeyChainAuthentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26CC8B232459D01000762010 /* KeyChainAuthentication.swift */; };
 		26CC8BCA2459F61800762010 /* LandingTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26CC8BC92459F61800762010 /* LandingTabBarController.swift */; };
 		26CC8BCD2459F86000762010 /* LAContext+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26CC8BCC2459F86000762010 /* LAContext+Extensions.swift */; };
@@ -55,6 +56,7 @@
 		261E1EC424A381E900937D89 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
 		2622385624A36DAB00646B5C /* CounterView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CounterView.xib; sourceTree = "<group>"; };
 		2622385824A36DB900646B5C /* CounterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterView.swift; sourceTree = "<group>"; };
+		26772B0C24B593D9003FB1A4 /* DemoView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DemoView.xib; sourceTree = "<group>"; };
 		26CC8B232459D01000762010 /* KeyChainAuthentication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyChainAuthentication.swift; sourceTree = "<group>"; };
 		26CC8BC92459F61800762010 /* LandingTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingTabBarController.swift; sourceTree = "<group>"; };
 		26CC8BCC2459F86000762010 /* LAContext+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LAContext+Extensions.swift"; sourceTree = "<group>"; };
@@ -115,6 +117,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		26772B0B24B593C8003FB1A4 /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				26772B0C24B593D9003FB1A4 /* DemoView.xib */,
+			);
+			path = Demo;
+			sourceTree = "<group>";
+		};
 		2692B737246C5F23009B7EFC /* Components */ = {
 			isa = PBXGroup;
 			children = (
@@ -273,6 +283,7 @@
 		ED747BF92458A5FF005BE3D5 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				26772B0B24B593C8003FB1A4 /* Demo */,
 				ED747BE824589E3A005BE3D5 /* Main.storyboard */,
 				2692B737246C5F23009B7EFC /* Components */,
 				26E88F962462976700DA9E03 /* Login */,
@@ -353,6 +364,7 @@
 				26E98E76246D42EF00351864 /* art.scnassets in Resources */,
 				ED747BEC24589E3D005BE3D5 /* Assets.xcassets in Resources */,
 				2622385724A36DAB00646B5C /* CounterView.xib in Resources */,
+				26772B0D24B593D9003FB1A4 /* DemoView.xib in Resources */,
 				26E991242473ABC700351864 /* DateSpotView.xib in Resources */,
 				ED747BEA24589E3A005BE3D5 /* Main.storyboard in Resources */,
 			);
