@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		265C49DB24A226130087BDD1 /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265C49DA24A226130087BDD1 /* Test.swift */; };
 		26CC8B242459D01000762010 /* KeyChainAuthentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26CC8B232459D01000762010 /* KeyChainAuthentication.swift */; };
 		26CC8BCA2459F61800762010 /* LandingTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26CC8BC92459F61800762010 /* LandingTabBarController.swift */; };
 		26CC8BCD2459F86000762010 /* LAContext+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26CC8BCC2459F86000762010 /* LAContext+Extensions.swift */; };
@@ -49,6 +50,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		265C49DA24A226130087BDD1 /* Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
 		26CC8B232459D01000762010 /* KeyChainAuthentication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyChainAuthentication.swift; sourceTree = "<group>"; };
 		26CC8BC92459F61800762010 /* LandingTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingTabBarController.swift; sourceTree = "<group>"; };
 		26CC8BCC2459F86000762010 /* LAContext+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LAContext+Extensions.swift"; sourceTree = "<group>"; };
@@ -180,6 +182,7 @@
 				26E890EA2462D38D00DA9E03 /* Swipes */,
 				26E890E82462D36000DA9E03 /* DateMap */,
 				26E890E92462D38600DA9E03 /* MyProfile */,
+				265C49DA24A226130087BDD1 /* Test.swift */,
 			);
 			path = Landing;
 			sourceTree = "<group>";
@@ -401,6 +404,7 @@
 				26CC8D46246013EF00762010 /* UserView.swift in Sources */,
 				26E991F02473E3D900351864 /* CoreMotionViewController.swift in Sources */,
 				26CC8BD1245ACB5800762010 /* SwipeView.swift in Sources */,
+				265C49DB24A226130087BDD1 /* Test.swift in Sources */,
 				ED747BE524589E3A005BE3D5 /* SceneDelegate.swift in Sources */,
 				26E88F9524628BF600DA9E03 /* DatingSpot.swift in Sources */,
 				26E88F992462979B00DA9E03 /* MyProfileGroup.swift in Sources */,

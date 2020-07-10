@@ -60,7 +60,7 @@ struct UserView: View {
 
 struct UserView_Previews: PreviewProvider {
     static var previews: some View {
-        UserView(user: User(email: "", password: "", name: "Piet", surname: "Pompies", profileImage: "https://picsum.photos/400", age: 20, gender: .male))
+        UserView(user: User(email: "", password: "", name: "Pietie", surname: "Pompies", profileImage: "https://picsum.photos/400", age: 20, gender: .male))
     }
 }
 
