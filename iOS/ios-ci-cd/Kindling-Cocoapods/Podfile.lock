@@ -1,0 +1,24 @@
+PODS:
+  - Alamofire (5.2.0)
+  - OCMock (3.7.1)
+  - SwiftyJSON (4.0.0)
+
+DEPENDENCIES:
+  - Alamofire (= 5.2)
+  - OCMock (~> 3.7)
+  - SwiftyJSON (= 4.0)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - OCMock
+    - SwiftyJSON
+
+SPEC CHECKSUMS:
+  Alamofire: c1ca147559e730bfb2182c8c7aafbdd90a867987
+  OCMock: 75fbeaa46a9b11f8c182bbb1d1f7e9a35ccc9955
+  SwiftyJSON: 070dabdcb1beb81b247c65ffa3a79dbbfb3b48aa
+
+PODFILE CHECKSUM: a7e9935b80139e2964b4c943d074263c61b20736
+
+COCOAPODS: 1.9.3

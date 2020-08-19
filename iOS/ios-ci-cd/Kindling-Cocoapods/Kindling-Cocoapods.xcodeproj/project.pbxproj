@@ -1,0 +1,592 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0F219E07254FA215EA9C83E0 /* Pods_Kindling_Cocoapods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77F3C9F514A70FA40B0A5B01 /* Pods_Kindling_Cocoapods.framework */; };
+		498BDD7AF29094BC018CE3D9 /* Pods_Kindling_CocoapodsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C06A212EC549683CB7E5695C /* Pods_Kindling_CocoapodsTests.framework */; };
+		CF8085CC24ED664E0017E885 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8085CB24ED664E0017E885 /* AppDelegate.swift */; };
+		CF8085CE24ED664E0017E885 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8085CD24ED664E0017E885 /* SceneDelegate.swift */; };
+		CF8085D024ED664E0017E885 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8085CF24ED664E0017E885 /* ViewController.swift */; };
+		CF8085D324ED664E0017E885 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF8085D124ED664E0017E885 /* Main.storyboard */; };
+		CF8085D524ED664F0017E885 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF8085D424ED664F0017E885 /* Assets.xcassets */; };
+		CF8085D824ED664F0017E885 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF8085D624ED664F0017E885 /* LaunchScreen.storyboard */; };
+		CF8085E324ED66500017E885 /* Kindling_CocoapodsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8085E224ED66500017E885 /* Kindling_CocoapodsTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CF8085DF24ED66500017E885 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CF8085C024ED664E0017E885 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CF8085C724ED664E0017E885;
+			remoteInfo = "Kindling-Cocoapods";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		652DC0508831D990831F3A1E /* Pods-Kindling-CocoapodsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kindling-CocoapodsTests.debug.xcconfig"; path = "Target Support Files/Pods-Kindling-CocoapodsTests/Pods-Kindling-CocoapodsTests.debug.xcconfig"; sourceTree = "<group>"; };
+		77F3C9F514A70FA40B0A5B01 /* Pods_Kindling_Cocoapods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Kindling_Cocoapods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9429E0FE3EC07A2A90AF0E63 /* Pods-Kindling-Cocoapods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kindling-Cocoapods.debug.xcconfig"; path = "Target Support Files/Pods-Kindling-Cocoapods/Pods-Kindling-Cocoapods.debug.xcconfig"; sourceTree = "<group>"; };
+		C06A212EC549683CB7E5695C /* Pods_Kindling_CocoapodsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Kindling_CocoapodsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF8085C824ED664E0017E885 /* Kindling-Cocoapods.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Kindling-Cocoapods.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF8085CB24ED664E0017E885 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CF8085CD24ED664E0017E885 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		CF8085CF24ED664E0017E885 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CF8085D224ED664E0017E885 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CF8085D424ED664F0017E885 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CF8085D724ED664F0017E885 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CF8085D924ED664F0017E885 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF8085DE24ED66500017E885 /* Kindling-CocoapodsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Kindling-CocoapodsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF8085E224ED66500017E885 /* Kindling_CocoapodsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kindling_CocoapodsTests.swift; sourceTree = "<group>"; };
+		CF8085E424ED66500017E885 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D407C4127D03EB2A65725938 /* Pods-Kindling-CocoapodsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kindling-CocoapodsTests.release.xcconfig"; path = "Target Support Files/Pods-Kindling-CocoapodsTests/Pods-Kindling-CocoapodsTests.release.xcconfig"; sourceTree = "<group>"; };
+		DFE94B247CE33AEE6702579B /* Pods-Kindling-Cocoapods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kindling-Cocoapods.release.xcconfig"; path = "Target Support Files/Pods-Kindling-Cocoapods/Pods-Kindling-Cocoapods.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CF8085C524ED664E0017E885 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F219E07254FA215EA9C83E0 /* Pods_Kindling_Cocoapods.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF8085DB24ED66500017E885 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				498BDD7AF29094BC018CE3D9 /* Pods_Kindling_CocoapodsTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		60D18790B46CAF3204E83FF3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				77F3C9F514A70FA40B0A5B01 /* Pods_Kindling_Cocoapods.framework */,
+				C06A212EC549683CB7E5695C /* Pods_Kindling_CocoapodsTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		62B99B6A05C7A62218CB476F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9429E0FE3EC07A2A90AF0E63 /* Pods-Kindling-Cocoapods.debug.xcconfig */,
+				DFE94B247CE33AEE6702579B /* Pods-Kindling-Cocoapods.release.xcconfig */,
+				652DC0508831D990831F3A1E /* Pods-Kindling-CocoapodsTests.debug.xcconfig */,
+				D407C4127D03EB2A65725938 /* Pods-Kindling-CocoapodsTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		CF8085BF24ED664E0017E885 = {
+			isa = PBXGroup;
+			children = (
+				CF8085CA24ED664E0017E885 /* Kindling-Cocoapods */,
+				CF8085E124ED66500017E885 /* Kindling-CocoapodsTests */,
+				CF8085C924ED664E0017E885 /* Products */,
+				62B99B6A05C7A62218CB476F /* Pods */,
+				60D18790B46CAF3204E83FF3 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CF8085C924ED664E0017E885 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CF8085C824ED664E0017E885 /* Kindling-Cocoapods.app */,
+				CF8085DE24ED66500017E885 /* Kindling-CocoapodsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CF8085CA24ED664E0017E885 /* Kindling-Cocoapods */ = {
+			isa = PBXGroup;
+			children = (
+				CF8085CB24ED664E0017E885 /* AppDelegate.swift */,
+				CF8085CD24ED664E0017E885 /* SceneDelegate.swift */,
+				CF8085CF24ED664E0017E885 /* ViewController.swift */,
+				CF8085D124ED664E0017E885 /* Main.storyboard */,
+				CF8085D424ED664F0017E885 /* Assets.xcassets */,
+				CF8085D624ED664F0017E885 /* LaunchScreen.storyboard */,
+				CF8085D924ED664F0017E885 /* Info.plist */,
+			);
+			path = "Kindling-Cocoapods";
+			sourceTree = "<group>";
+		};
+		CF8085E124ED66500017E885 /* Kindling-CocoapodsTests */ = {
+			isa = PBXGroup;
+			children = (
+				CF8085E224ED66500017E885 /* Kindling_CocoapodsTests.swift */,
+				CF8085E424ED66500017E885 /* Info.plist */,
+			);
+			path = "Kindling-CocoapodsTests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CF8085C724ED664E0017E885 /* Kindling-Cocoapods */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF8085E724ED66500017E885 /* Build configuration list for PBXNativeTarget "Kindling-Cocoapods" */;
+			buildPhases = (
+				F64F70CFE26C8CFEE6FAFD6F /* [CP] Check Pods Manifest.lock */,
+				CF8085C424ED664E0017E885 /* Sources */,
+				CF8085C524ED664E0017E885 /* Frameworks */,
+				CF8085C624ED664E0017E885 /* Resources */,
+				8AA66439DF904B044B126BB3 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Kindling-Cocoapods";
+			productName = "Kindling-Cocoapods";
+			productReference = CF8085C824ED664E0017E885 /* Kindling-Cocoapods.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CF8085DD24ED66500017E885 /* Kindling-CocoapodsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF8085EA24ED66500017E885 /* Build configuration list for PBXNativeTarget "Kindling-CocoapodsTests" */;
+			buildPhases = (
+				890D46A80383F04EABDDA123 /* [CP] Check Pods Manifest.lock */,
+				CF8085DA24ED66500017E885 /* Sources */,
+				CF8085DB24ED66500017E885 /* Frameworks */,
+				CF8085DC24ED66500017E885 /* Resources */,
+				DCC714DF921FFE8CB4A8D513 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CF8085E024ED66500017E885 /* PBXTargetDependency */,
+			);
+			name = "Kindling-CocoapodsTests";
+			productName = "Kindling-CocoapodsTests";
+			productReference = CF8085DE24ED66500017E885 /* Kindling-CocoapodsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CF8085C024ED664E0017E885 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1160;
+				LastUpgradeCheck = 1160;
+				ORGANIZATIONNAME = Entelect;
+				TargetAttributes = {
+					CF8085C724ED664E0017E885 = {
+						CreatedOnToolsVersion = 11.6;
+					};
+					CF8085DD24ED66500017E885 = {
+						CreatedOnToolsVersion = 11.6;
+						TestTargetID = CF8085C724ED664E0017E885;
+					};
+				};
+			};
+			buildConfigurationList = CF8085C324ED664E0017E885 /* Build configuration list for PBXProject "Kindling-Cocoapods" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF8085BF24ED664E0017E885;
+			productRefGroup = CF8085C924ED664E0017E885 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CF8085C724ED664E0017E885 /* Kindling-Cocoapods */,
+				CF8085DD24ED66500017E885 /* Kindling-CocoapodsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CF8085C624ED664E0017E885 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF8085D824ED664F0017E885 /* LaunchScreen.storyboard in Resources */,
+				CF8085D524ED664F0017E885 /* Assets.xcassets in Resources */,
+				CF8085D324ED664E0017E885 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF8085DC24ED66500017E885 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		890D46A80383F04EABDDA123 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Kindling-CocoapodsTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8AA66439DF904B044B126BB3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Kindling-Cocoapods/Pods-Kindling-Cocoapods-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Kindling-Cocoapods/Pods-Kindling-Cocoapods-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Kindling-Cocoapods/Pods-Kindling-Cocoapods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DCC714DF921FFE8CB4A8D513 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Kindling-CocoapodsTests/Pods-Kindling-CocoapodsTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Kindling-CocoapodsTests/Pods-Kindling-CocoapodsTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Kindling-CocoapodsTests/Pods-Kindling-CocoapodsTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F64F70CFE26C8CFEE6FAFD6F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Kindling-Cocoapods-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CF8085C424ED664E0017E885 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF8085D024ED664E0017E885 /* ViewController.swift in Sources */,
+				CF8085CC24ED664E0017E885 /* AppDelegate.swift in Sources */,
+				CF8085CE24ED664E0017E885 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF8085DA24ED66500017E885 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF8085E324ED66500017E885 /* Kindling_CocoapodsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CF8085E024ED66500017E885 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CF8085C724ED664E0017E885 /* Kindling-Cocoapods */;
+			targetProxy = CF8085DF24ED66500017E885 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CF8085D124ED664E0017E885 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CF8085D224ED664E0017E885 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CF8085D624ED664F0017E885 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CF8085D724ED664F0017E885 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CF8085E524ED66500017E885 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CF8085E624ED66500017E885 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CF8085E824ED66500017E885 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9429E0FE3EC07A2A90AF0E63 /* Pods-Kindling-Cocoapods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Kindling-Cocoapods/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "za.co.entelect.Kindling-Cocoapods";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CF8085E924ED66500017E885 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DFE94B247CE33AEE6702579B /* Pods-Kindling-Cocoapods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Kindling-Cocoapods/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "za.co.entelect.Kindling-Cocoapods";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CF8085EB24ED66500017E885 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 652DC0508831D990831F3A1E /* Pods-Kindling-CocoapodsTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Kindling-CocoapodsTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "za.co.entelect.Kindling-CocoapodsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Kindling-Cocoapods.app/Kindling-Cocoapods";
+			};
+			name = Debug;
+		};
+		CF8085EC24ED66500017E885 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D407C4127D03EB2A65725938 /* Pods-Kindling-CocoapodsTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Kindling-CocoapodsTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "za.co.entelect.Kindling-CocoapodsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Kindling-Cocoapods.app/Kindling-Cocoapods";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CF8085C324ED664E0017E885 /* Build configuration list for PBXProject "Kindling-Cocoapods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF8085E524ED66500017E885 /* Debug */,
+				CF8085E624ED66500017E885 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF8085E724ED66500017E885 /* Build configuration list for PBXNativeTarget "Kindling-Cocoapods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF8085E824ED66500017E885 /* Debug */,
+				CF8085E924ED66500017E885 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF8085EA24ED66500017E885 /* Build configuration list for PBXNativeTarget "Kindling-CocoapodsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF8085EB24ED66500017E885 /* Debug */,
+				CF8085EC24ED66500017E885 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CF8085C024ED664E0017E885 /* Project object */;
+}
