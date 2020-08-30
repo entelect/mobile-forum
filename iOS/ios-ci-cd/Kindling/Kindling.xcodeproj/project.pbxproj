@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		07985C7829E16940129D33F1 /* Pods_KindlingTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 452BBCFACC39C0246B821B46 /* Pods_KindlingTests.framework */; };
+		21DA6C55927019710ACB777C /* Pods_Kindling.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8724E7F53E3F8E8EB08F214 /* Pods_Kindling.framework */; };
 		58E0EEFF24FBF51A00032E56 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E0EEFE24FBF51A00032E56 /* AppDelegate.swift */; };
 		58E0EF0124FBF51A00032E56 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E0EF0024FBF51A00032E56 /* SceneDelegate.swift */; };
 		58E0EF0324FBF51A00032E56 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E0EF0224FBF51A00032E56 /* ViewController.swift */; };
@@ -20,7 +20,7 @@
 		58E0EF2624FBF8A400032E56 /* StringExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E0EF2524FBF8A400032E56 /* StringExtensionsTests.swift */; };
 		58E0EF2A24FBFB5300032E56 /* KindlingEnv.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E0EF2924FBFB5300032E56 /* KindlingEnv.swift */; };
 		58E0EF2B24FBFB5300032E56 /* KindlingEnv.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E0EF2924FBFB5300032E56 /* KindlingEnv.swift */; };
-		E538EF587FE099C7F7B4D8CC /* Pods_Kindling.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAC72E63D87E7B844B49195E /* Pods_Kindling.framework */; };
+		DED1B7E710F37F7586E0BA25 /* Pods_KindlingTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06E9A0A37B2564A046BCF891 /* Pods_KindlingTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,12 +34,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		174959245CB4589E44F037D5 /* Pods-Kindling.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kindling.release.xcconfig"; path = "Target Support Files/Pods-Kindling/Pods-Kindling.release.xcconfig"; sourceTree = "<group>"; };
-		1E7B1F524845333D81A55402 /* Pods-Kindling.debug qa.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kindling.debug qa.xcconfig"; path = "Target Support Files/Pods-Kindling/Pods-Kindling.debug qa.xcconfig"; sourceTree = "<group>"; };
-		247510C7D8971C8456FC7AD0 /* Pods-Kindling.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kindling.debug.xcconfig"; path = "Target Support Files/Pods-Kindling/Pods-Kindling.debug.xcconfig"; sourceTree = "<group>"; };
-		2F3180327460D7B91186B228 /* Pods-Kindling.release development.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kindling.release development.xcconfig"; path = "Target Support Files/Pods-Kindling/Pods-Kindling.release development.xcconfig"; sourceTree = "<group>"; };
-		452BBCFACC39C0246B821B46 /* Pods_KindlingTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KindlingTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4DD67BA8DA93A4FB44051407 /* Pods-KindlingTests.debug production.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KindlingTests.debug production.xcconfig"; path = "Target Support Files/Pods-KindlingTests/Pods-KindlingTests.debug production.xcconfig"; sourceTree = "<group>"; };
+		06E9A0A37B2564A046BCF891 /* Pods_KindlingTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KindlingTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		08BC6CAA21FEED56C2E44722 /* Pods-KindlingTests.release production.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KindlingTests.release production.xcconfig"; path = "Target Support Files/Pods-KindlingTests/Pods-KindlingTests.release production.xcconfig"; sourceTree = "<group>"; };
+		136917137DEA73DC7889C43D /* Pods-KindlingTests.debug development.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KindlingTests.debug development.xcconfig"; path = "Target Support Files/Pods-KindlingTests/Pods-KindlingTests.debug development.xcconfig"; sourceTree = "<group>"; };
+		34169F3B4F62932BC91976A9 /* Pods-Kindling.release production.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kindling.release production.xcconfig"; path = "Target Support Files/Pods-Kindling/Pods-Kindling.release production.xcconfig"; sourceTree = "<group>"; };
+		443C2BA52954B024F2CD695B /* Pods-KindlingTests.release qa.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KindlingTests.release qa.xcconfig"; path = "Target Support Files/Pods-KindlingTests/Pods-KindlingTests.release qa.xcconfig"; sourceTree = "<group>"; };
+		5254B794151914AD73148CFC /* Pods-Kindling.release qa.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kindling.release qa.xcconfig"; path = "Target Support Files/Pods-Kindling/Pods-Kindling.release qa.xcconfig"; sourceTree = "<group>"; };
 		584EE2AF24FC15F800C19E44 /* Development.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Development.xcconfig; sourceTree = "<group>"; };
 		584EE2B124FC161C00C19E44 /* QA.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = QA.xcconfig; sourceTree = "<group>"; };
 		584EE2B324FC164300C19E44 /* Production.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Production.xcconfig; sourceTree = "<group>"; };
@@ -57,18 +57,14 @@
 		58E0EF2124FBF85700032E56 /* StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
 		58E0EF2524FBF8A400032E56 /* StringExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensionsTests.swift; sourceTree = "<group>"; };
 		58E0EF2924FBFB5300032E56 /* KindlingEnv.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KindlingEnv.swift; sourceTree = "<group>"; };
-		658F014D9A172E8BBD2C347B /* Pods-KindlingTests.release development.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KindlingTests.release development.xcconfig"; path = "Target Support Files/Pods-KindlingTests/Pods-KindlingTests.release development.xcconfig"; sourceTree = "<group>"; };
-		89BF3C76411A0677030FDDAD /* Pods-KindlingTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KindlingTests.debug.xcconfig"; path = "Target Support Files/Pods-KindlingTests/Pods-KindlingTests.debug.xcconfig"; sourceTree = "<group>"; };
-		8B1B67F4EC92B25E1975D618 /* Pods-KindlingTests.release production.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KindlingTests.release production.xcconfig"; path = "Target Support Files/Pods-KindlingTests/Pods-KindlingTests.release production.xcconfig"; sourceTree = "<group>"; };
-		95481B149B7952CFFB3D7572 /* Pods-KindlingTests.debug development.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KindlingTests.debug development.xcconfig"; path = "Target Support Files/Pods-KindlingTests/Pods-KindlingTests.debug development.xcconfig"; sourceTree = "<group>"; };
-		A1B0748F0AD5A3975BCA181C /* Pods-KindlingTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KindlingTests.release.xcconfig"; path = "Target Support Files/Pods-KindlingTests/Pods-KindlingTests.release.xcconfig"; sourceTree = "<group>"; };
-		B9DFF55D81550ADD5EF0B9BF /* Pods-Kindling.debug production.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kindling.debug production.xcconfig"; path = "Target Support Files/Pods-Kindling/Pods-Kindling.debug production.xcconfig"; sourceTree = "<group>"; };
-		D228B88400AEA7C94262DF8D /* Pods-KindlingTests.debug qa.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KindlingTests.debug qa.xcconfig"; path = "Target Support Files/Pods-KindlingTests/Pods-KindlingTests.debug qa.xcconfig"; sourceTree = "<group>"; };
-		E321F16C2B6245EDC23AE0BE /* Pods-Kindling.release production.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kindling.release production.xcconfig"; path = "Target Support Files/Pods-Kindling/Pods-Kindling.release production.xcconfig"; sourceTree = "<group>"; };
-		EAC72E63D87E7B844B49195E /* Pods_Kindling.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Kindling.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		EE84392CE1F53F79D2240198 /* Pods-Kindling.debug development.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kindling.debug development.xcconfig"; path = "Target Support Files/Pods-Kindling/Pods-Kindling.debug development.xcconfig"; sourceTree = "<group>"; };
-		EEF6321437CF2BB34BB2503D /* Pods-Kindling.release qa.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kindling.release qa.xcconfig"; path = "Target Support Files/Pods-Kindling/Pods-Kindling.release qa.xcconfig"; sourceTree = "<group>"; };
-		F0486D6E972D6D9E0CFC0AEB /* Pods-KindlingTests.release qa.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KindlingTests.release qa.xcconfig"; path = "Target Support Files/Pods-KindlingTests/Pods-KindlingTests.release qa.xcconfig"; sourceTree = "<group>"; };
+		59D9F525D3DFF0F5E366B002 /* Pods-KindlingTests.debug production.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KindlingTests.debug production.xcconfig"; path = "Target Support Files/Pods-KindlingTests/Pods-KindlingTests.debug production.xcconfig"; sourceTree = "<group>"; };
+		881800E16B766B742500E7D3 /* Pods-Kindling.debug qa.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kindling.debug qa.xcconfig"; path = "Target Support Files/Pods-Kindling/Pods-Kindling.debug qa.xcconfig"; sourceTree = "<group>"; };
+		9F6167F14B85465606C1E9DA /* Pods-KindlingTests.release development.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KindlingTests.release development.xcconfig"; path = "Target Support Files/Pods-KindlingTests/Pods-KindlingTests.release development.xcconfig"; sourceTree = "<group>"; };
+		A3C943A0DEF21FE6EB473A49 /* Pods-KindlingTests.debug qa.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KindlingTests.debug qa.xcconfig"; path = "Target Support Files/Pods-KindlingTests/Pods-KindlingTests.debug qa.xcconfig"; sourceTree = "<group>"; };
+		A500AD5CDA9851FBBCA8A54C /* Pods-Kindling.debug production.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kindling.debug production.xcconfig"; path = "Target Support Files/Pods-Kindling/Pods-Kindling.debug production.xcconfig"; sourceTree = "<group>"; };
+		A96961CBC6EECE7FD28F89AF /* Pods-Kindling.release development.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kindling.release development.xcconfig"; path = "Target Support Files/Pods-Kindling/Pods-Kindling.release development.xcconfig"; sourceTree = "<group>"; };
+		C4752952A6215166DA0A5F4C /* Pods-Kindling.debug development.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kindling.debug development.xcconfig"; path = "Target Support Files/Pods-Kindling/Pods-Kindling.debug development.xcconfig"; sourceTree = "<group>"; };
+		E8724E7F53E3F8E8EB08F214 /* Pods_Kindling.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Kindling.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,7 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E538EF587FE099C7F7B4D8CC /* Pods_Kindling.framework in Frameworks */,
+				21DA6C55927019710ACB777C /* Pods_Kindling.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,22 +80,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				07985C7829E16940129D33F1 /* Pods_KindlingTests.framework in Frameworks */,
+				DED1B7E710F37F7586E0BA25 /* Pods_KindlingTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		18440876C46AC7B71C368A54 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				EAC72E63D87E7B844B49195E /* Pods_Kindling.framework */,
-				452BBCFACC39C0246B821B46 /* Pods_KindlingTests.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		58E0EEF224FBF51A00032E56 = {
 			isa = PBXGroup;
 			children = (
@@ -110,7 +97,7 @@
 				58E0EF1424FBF51B00032E56 /* KindlingTests */,
 				58E0EEFC24FBF51A00032E56 /* Products */,
 				D4D2CA64BC91280140D7A59C /* Pods */,
-				18440876C46AC7B71C368A54 /* Frameworks */,
+				67A8A141F8C2FA79053D234E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -189,25 +176,30 @@
 			path = Controllers;
 			sourceTree = "<group>";
 		};
+		67A8A141F8C2FA79053D234E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E8724E7F53E3F8E8EB08F214 /* Pods_Kindling.framework */,
+				06E9A0A37B2564A046BCF891 /* Pods_KindlingTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D4D2CA64BC91280140D7A59C /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				247510C7D8971C8456FC7AD0 /* Pods-Kindling.debug.xcconfig */,
-				174959245CB4589E44F037D5 /* Pods-Kindling.release.xcconfig */,
-				89BF3C76411A0677030FDDAD /* Pods-KindlingTests.debug.xcconfig */,
-				A1B0748F0AD5A3975BCA181C /* Pods-KindlingTests.release.xcconfig */,
-				B9DFF55D81550ADD5EF0B9BF /* Pods-Kindling.debug production.xcconfig */,
-				1E7B1F524845333D81A55402 /* Pods-Kindling.debug qa.xcconfig */,
-				EE84392CE1F53F79D2240198 /* Pods-Kindling.debug development.xcconfig */,
-				E321F16C2B6245EDC23AE0BE /* Pods-Kindling.release production.xcconfig */,
-				EEF6321437CF2BB34BB2503D /* Pods-Kindling.release qa.xcconfig */,
-				2F3180327460D7B91186B228 /* Pods-Kindling.release development.xcconfig */,
-				4DD67BA8DA93A4FB44051407 /* Pods-KindlingTests.debug production.xcconfig */,
-				D228B88400AEA7C94262DF8D /* Pods-KindlingTests.debug qa.xcconfig */,
-				95481B149B7952CFFB3D7572 /* Pods-KindlingTests.debug development.xcconfig */,
-				8B1B67F4EC92B25E1975D618 /* Pods-KindlingTests.release production.xcconfig */,
-				F0486D6E972D6D9E0CFC0AEB /* Pods-KindlingTests.release qa.xcconfig */,
-				658F014D9A172E8BBD2C347B /* Pods-KindlingTests.release development.xcconfig */,
+				A500AD5CDA9851FBBCA8A54C /* Pods-Kindling.debug production.xcconfig */,
+				881800E16B766B742500E7D3 /* Pods-Kindling.debug qa.xcconfig */,
+				C4752952A6215166DA0A5F4C /* Pods-Kindling.debug development.xcconfig */,
+				34169F3B4F62932BC91976A9 /* Pods-Kindling.release production.xcconfig */,
+				5254B794151914AD73148CFC /* Pods-Kindling.release qa.xcconfig */,
+				A96961CBC6EECE7FD28F89AF /* Pods-Kindling.release development.xcconfig */,
+				59D9F525D3DFF0F5E366B002 /* Pods-KindlingTests.debug production.xcconfig */,
+				A3C943A0DEF21FE6EB473A49 /* Pods-KindlingTests.debug qa.xcconfig */,
+				136917137DEA73DC7889C43D /* Pods-KindlingTests.debug development.xcconfig */,
+				08BC6CAA21FEED56C2E44722 /* Pods-KindlingTests.release production.xcconfig */,
+				443C2BA52954B024F2CD695B /* Pods-KindlingTests.release qa.xcconfig */,
+				9F6167F14B85465606C1E9DA /* Pods-KindlingTests.release development.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -219,11 +211,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 58E0EF1A24FBF51B00032E56 /* Build configuration list for PBXNativeTarget "Kindling" */;
 			buildPhases = (
-				6BEA1C05D759DBDA16D9850E /* [CP] Check Pods Manifest.lock */,
+				111B912D4CED8321720E6ED9 /* [CP] Check Pods Manifest.lock */,
 				58E0EEF724FBF51A00032E56 /* Sources */,
 				58E0EEF824FBF51A00032E56 /* Frameworks */,
 				58E0EEF924FBF51A00032E56 /* Resources */,
-				C609FD7A137E8BD5DB44B4E6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -238,11 +229,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 58E0EF1D24FBF51B00032E56 /* Build configuration list for PBXNativeTarget "KindlingTests" */;
 			buildPhases = (
-				4352352F0E49E979133A9A1B /* [CP] Check Pods Manifest.lock */,
+				F4E307963C53D55CB338D39B /* [CP] Check Pods Manifest.lock */,
 				58E0EF0D24FBF51B00032E56 /* Sources */,
 				58E0EF0E24FBF51B00032E56 /* Frameworks */,
 				58E0EF0F24FBF51B00032E56 /* Resources */,
-				1518BAAB14CD10B17F529860 /* [CP] Embed Pods Frameworks */,
+				14F62236605C147E1E727EA7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -313,46 +304,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		1518BAAB14CD10B17F529860 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-KindlingTests/Pods-KindlingTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-KindlingTests/Pods-KindlingTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KindlingTests/Pods-KindlingTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		4352352F0E49E979133A9A1B /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-KindlingTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		6BEA1C05D759DBDA16D9850E /* [CP] Check Pods Manifest.lock */ = {
+		111B912D4CED8321720E6ED9 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -374,21 +326,43 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		C609FD7A137E8BD5DB44B4E6 /* [CP] Embed Pods Frameworks */ = {
+		14F62236605C147E1E727EA7 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Kindling/Pods-Kindling-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-KindlingTests/Pods-KindlingTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Kindling/Pods-Kindling-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-KindlingTests/Pods-KindlingTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Kindling/Pods-Kindling-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KindlingTests/Pods-KindlingTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F4E307963C53D55CB338D39B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KindlingTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -510,8 +484,9 @@
 		};
 		588F0B0724FC0BD200CC3BDD /* Debug Development */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EE84392CE1F53F79D2240198 /* Pods-Kindling.debug development.xcconfig */;
+			baseConfigurationReference = C4752952A6215166DA0A5F4C /* Pods-Kindling.debug development.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7VWX8ZFRJD;
@@ -529,9 +504,9 @@
 		};
 		588F0B0824FC0BD200CC3BDD /* Debug Development */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 95481B149B7952CFFB3D7572 /* Pods-KindlingTests.debug development.xcconfig */;
+			baseConfigurationReference = 136917137DEA73DC7889C43D /* Pods-KindlingTests.debug development.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7VWX8ZFRJD;
@@ -613,8 +588,9 @@
 		};
 		588F0B0A24FC0BF300CC3BDD /* Debug QA */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1E7B1F524845333D81A55402 /* Pods-Kindling.debug qa.xcconfig */;
+			baseConfigurationReference = 881800E16B766B742500E7D3 /* Pods-Kindling.debug qa.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7VWX8ZFRJD;
@@ -632,9 +608,9 @@
 		};
 		588F0B0B24FC0BF300CC3BDD /* Debug QA */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D228B88400AEA7C94262DF8D /* Pods-KindlingTests.debug qa.xcconfig */;
+			baseConfigurationReference = A3C943A0DEF21FE6EB473A49 /* Pods-KindlingTests.debug qa.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7VWX8ZFRJD;
@@ -716,8 +692,9 @@
 		};
 		588F0B0D24FC0BFA00CC3BDD /* Debug Production */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B9DFF55D81550ADD5EF0B9BF /* Pods-Kindling.debug production.xcconfig */;
+			baseConfigurationReference = A500AD5CDA9851FBBCA8A54C /* Pods-Kindling.debug production.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7VWX8ZFRJD;
@@ -735,9 +712,9 @@
 		};
 		588F0B0E24FC0BFA00CC3BDD /* Debug Production */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4DD67BA8DA93A4FB44051407 /* Pods-KindlingTests.debug production.xcconfig */;
+			baseConfigurationReference = 59D9F525D3DFF0F5E366B002 /* Pods-KindlingTests.debug production.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7VWX8ZFRJD;
@@ -816,8 +793,9 @@
 		};
 		588F0B1624FC0C2400CC3BDD /* Release Development */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2F3180327460D7B91186B228 /* Pods-Kindling.release development.xcconfig */;
+			baseConfigurationReference = A96961CBC6EECE7FD28F89AF /* Pods-Kindling.release development.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7VWX8ZFRJD;
@@ -835,9 +813,9 @@
 		};
 		588F0B1724FC0C2400CC3BDD /* Release Development */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 658F014D9A172E8BBD2C347B /* Pods-KindlingTests.release development.xcconfig */;
+			baseConfigurationReference = 9F6167F14B85465606C1E9DA /* Pods-KindlingTests.release development.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7VWX8ZFRJD;
@@ -914,8 +892,9 @@
 		};
 		588F0B1924FC0C2C00CC3BDD /* Release QA */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EEF6321437CF2BB34BB2503D /* Pods-Kindling.release qa.xcconfig */;
+			baseConfigurationReference = 5254B794151914AD73148CFC /* Pods-Kindling.release qa.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7VWX8ZFRJD;
@@ -933,9 +912,9 @@
 		};
 		588F0B1A24FC0C2C00CC3BDD /* Release QA */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F0486D6E972D6D9E0CFC0AEB /* Pods-KindlingTests.release qa.xcconfig */;
+			baseConfigurationReference = 443C2BA52954B024F2CD695B /* Pods-KindlingTests.release qa.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7VWX8ZFRJD;
@@ -1012,8 +991,9 @@
 		};
 		588F0B1C24FC0C3300CC3BDD /* Release Production */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E321F16C2B6245EDC23AE0BE /* Pods-Kindling.release production.xcconfig */;
+			baseConfigurationReference = 34169F3B4F62932BC91976A9 /* Pods-Kindling.release production.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7VWX8ZFRJD;
@@ -1031,9 +1011,9 @@
 		};
 		588F0B1D24FC0C3300CC3BDD /* Release Production */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8B1B67F4EC92B25E1975D618 /* Pods-KindlingTests.release production.xcconfig */;
+			baseConfigurationReference = 08BC6CAA21FEED56C2E44722 /* Pods-KindlingTests.release production.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7VWX8ZFRJD;

@@ -1,20 +1,16 @@
 PODS:
-  - Alamofire (5.2.2)
   - Fakery (4.1.1)
 
 DEPENDENCIES:
-  - Alamofire (~> 5.2)
   - Fakery
 
 SPEC REPOS:
   trunk:
-    - Alamofire
     - Fakery
 
 SPEC CHECKSUMS:
-  Alamofire: 814429acc853c6c54ff123fc3d2ef66803823ce0
   Fakery: d3380c4aa1efe7631c0831d7e26aa9db4491f014
 
-PODFILE CHECKSUM: 4dae41383ea83bd764f7764d9fd702c2c1efdfd2
+PODFILE CHECKSUM: ad1abcc4f124efda3c45ca35e76bf8c999e23a60
 
 COCOAPODS: 1.9.3
