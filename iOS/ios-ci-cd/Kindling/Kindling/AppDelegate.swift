@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  Kindling-Cocoapods
+//  Kindling
 //
-//  Created by Christopher Araujo on 2020/08/19.
+//  Created by Christopher Araujo on 2020/08/30.
 //  Copyright © 2020 Entelect. All rights reserved.
 //
 

@@ -1,0 +1,651 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		07985C7829E16940129D33F1 /* Pods_KindlingTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 452BBCFACC39C0246B821B46 /* Pods_KindlingTests.framework */; };
+		58E0EEFF24FBF51A00032E56 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E0EEFE24FBF51A00032E56 /* AppDelegate.swift */; };
+		58E0EF0124FBF51A00032E56 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E0EF0024FBF51A00032E56 /* SceneDelegate.swift */; };
+		58E0EF0324FBF51A00032E56 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E0EF0224FBF51A00032E56 /* ViewController.swift */; };
+		58E0EF0624FBF51A00032E56 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58E0EF0424FBF51A00032E56 /* Main.storyboard */; };
+		58E0EF0824FBF51B00032E56 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58E0EF0724FBF51B00032E56 /* Assets.xcassets */; };
+		58E0EF0B24FBF51B00032E56 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58E0EF0924FBF51B00032E56 /* LaunchScreen.storyboard */; };
+		58E0EF1624FBF51B00032E56 /* KindlingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E0EF1524FBF51B00032E56 /* KindlingTests.swift */; };
+		58E0EF2224FBF85700032E56 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E0EF2124FBF85700032E56 /* StringExtensions.swift */; };
+		58E0EF2324FBF85700032E56 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E0EF2124FBF85700032E56 /* StringExtensions.swift */; };
+		58E0EF2624FBF8A400032E56 /* StringExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E0EF2524FBF8A400032E56 /* StringExtensionsTests.swift */; };
+		58E0EF2A24FBFB5300032E56 /* KindlingEnv.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E0EF2924FBFB5300032E56 /* KindlingEnv.swift */; };
+		58E0EF2B24FBFB5300032E56 /* KindlingEnv.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E0EF2924FBFB5300032E56 /* KindlingEnv.swift */; };
+		E538EF587FE099C7F7B4D8CC /* Pods_Kindling.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAC72E63D87E7B844B49195E /* Pods_Kindling.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		58E0EF1224FBF51B00032E56 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 58E0EEF324FBF51A00032E56 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 58E0EEFA24FBF51A00032E56;
+			remoteInfo = Kindling;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		174959245CB4589E44F037D5 /* Pods-Kindling.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kindling.release.xcconfig"; path = "Target Support Files/Pods-Kindling/Pods-Kindling.release.xcconfig"; sourceTree = "<group>"; };
+		247510C7D8971C8456FC7AD0 /* Pods-Kindling.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kindling.debug.xcconfig"; path = "Target Support Files/Pods-Kindling/Pods-Kindling.debug.xcconfig"; sourceTree = "<group>"; };
+		452BBCFACC39C0246B821B46 /* Pods_KindlingTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KindlingTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		58E0EEFB24FBF51A00032E56 /* Kindling.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kindling.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		58E0EEFE24FBF51A00032E56 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		58E0EF0024FBF51A00032E56 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		58E0EF0224FBF51A00032E56 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		58E0EF0524FBF51A00032E56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		58E0EF0724FBF51B00032E56 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		58E0EF0A24FBF51B00032E56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		58E0EF0C24FBF51B00032E56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		58E0EF1124FBF51B00032E56 /* KindlingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KindlingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		58E0EF1524FBF51B00032E56 /* KindlingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KindlingTests.swift; sourceTree = "<group>"; };
+		58E0EF1724FBF51B00032E56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		58E0EF2124FBF85700032E56 /* StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
+		58E0EF2524FBF8A400032E56 /* StringExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensionsTests.swift; sourceTree = "<group>"; };
+		58E0EF2924FBFB5300032E56 /* KindlingEnv.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KindlingEnv.swift; sourceTree = "<group>"; };
+		89BF3C76411A0677030FDDAD /* Pods-KindlingTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KindlingTests.debug.xcconfig"; path = "Target Support Files/Pods-KindlingTests/Pods-KindlingTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A1B0748F0AD5A3975BCA181C /* Pods-KindlingTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KindlingTests.release.xcconfig"; path = "Target Support Files/Pods-KindlingTests/Pods-KindlingTests.release.xcconfig"; sourceTree = "<group>"; };
+		EAC72E63D87E7B844B49195E /* Pods_Kindling.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Kindling.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		58E0EEF824FBF51A00032E56 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E538EF587FE099C7F7B4D8CC /* Pods_Kindling.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		58E0EF0E24FBF51B00032E56 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07985C7829E16940129D33F1 /* Pods_KindlingTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		18440876C46AC7B71C368A54 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EAC72E63D87E7B844B49195E /* Pods_Kindling.framework */,
+				452BBCFACC39C0246B821B46 /* Pods_KindlingTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		58E0EEF224FBF51A00032E56 = {
+			isa = PBXGroup;
+			children = (
+				58E0EEFD24FBF51A00032E56 /* Kindling */,
+				58E0EF1424FBF51B00032E56 /* KindlingTests */,
+				58E0EEFC24FBF51A00032E56 /* Products */,
+				D4D2CA64BC91280140D7A59C /* Pods */,
+				18440876C46AC7B71C368A54 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		58E0EEFC24FBF51A00032E56 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				58E0EEFB24FBF51A00032E56 /* Kindling.app */,
+				58E0EF1124FBF51B00032E56 /* KindlingTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		58E0EEFD24FBF51A00032E56 /* Kindling */ = {
+			isa = PBXGroup;
+			children = (
+				58E0EF2C24FBFCB000032E56 /* Controllers */,
+				58E0EF2824FBFB4100032E56 /* Utils */,
+				58E0EF2724FBF96600032E56 /* Views */,
+				58E0EF2024FBF83D00032E56 /* Extensions */,
+				58E0EEFE24FBF51A00032E56 /* AppDelegate.swift */,
+				58E0EF0024FBF51A00032E56 /* SceneDelegate.swift */,
+				58E0EF0724FBF51B00032E56 /* Assets.xcassets */,
+				58E0EF0924FBF51B00032E56 /* LaunchScreen.storyboard */,
+				58E0EF0C24FBF51B00032E56 /* Info.plist */,
+			);
+			path = Kindling;
+			sourceTree = "<group>";
+		};
+		58E0EF1424FBF51B00032E56 /* KindlingTests */ = {
+			isa = PBXGroup;
+			children = (
+				58E0EF2424FBF88B00032E56 /* Extensions */,
+				58E0EF1524FBF51B00032E56 /* KindlingTests.swift */,
+				58E0EF1724FBF51B00032E56 /* Info.plist */,
+			);
+			path = KindlingTests;
+			sourceTree = "<group>";
+		};
+		58E0EF2024FBF83D00032E56 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				58E0EF2124FBF85700032E56 /* StringExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		58E0EF2424FBF88B00032E56 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				58E0EF2524FBF8A400032E56 /* StringExtensionsTests.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		58E0EF2724FBF96600032E56 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				58E0EF0424FBF51A00032E56 /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		58E0EF2824FBFB4100032E56 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				58E0EF2924FBFB5300032E56 /* KindlingEnv.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		58E0EF2C24FBFCB000032E56 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				58E0EF0224FBF51A00032E56 /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		D4D2CA64BC91280140D7A59C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				247510C7D8971C8456FC7AD0 /* Pods-Kindling.debug.xcconfig */,
+				174959245CB4589E44F037D5 /* Pods-Kindling.release.xcconfig */,
+				89BF3C76411A0677030FDDAD /* Pods-KindlingTests.debug.xcconfig */,
+				A1B0748F0AD5A3975BCA181C /* Pods-KindlingTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		58E0EEFA24FBF51A00032E56 /* Kindling */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 58E0EF1A24FBF51B00032E56 /* Build configuration list for PBXNativeTarget "Kindling" */;
+			buildPhases = (
+				6BEA1C05D759DBDA16D9850E /* [CP] Check Pods Manifest.lock */,
+				58E0EEF724FBF51A00032E56 /* Sources */,
+				58E0EEF824FBF51A00032E56 /* Frameworks */,
+				58E0EEF924FBF51A00032E56 /* Resources */,
+				C609FD7A137E8BD5DB44B4E6 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Kindling;
+			productName = Kindling;
+			productReference = 58E0EEFB24FBF51A00032E56 /* Kindling.app */;
+			productType = "com.apple.product-type.application";
+		};
+		58E0EF1024FBF51B00032E56 /* KindlingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 58E0EF1D24FBF51B00032E56 /* Build configuration list for PBXNativeTarget "KindlingTests" */;
+			buildPhases = (
+				4352352F0E49E979133A9A1B /* [CP] Check Pods Manifest.lock */,
+				58E0EF0D24FBF51B00032E56 /* Sources */,
+				58E0EF0E24FBF51B00032E56 /* Frameworks */,
+				58E0EF0F24FBF51B00032E56 /* Resources */,
+				1518BAAB14CD10B17F529860 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				58E0EF1324FBF51B00032E56 /* PBXTargetDependency */,
+			);
+			name = KindlingTests;
+			productName = KindlingTests;
+			productReference = 58E0EF1124FBF51B00032E56 /* KindlingTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		58E0EEF324FBF51A00032E56 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1160;
+				LastUpgradeCheck = 1160;
+				ORGANIZATIONNAME = Entelect;
+				TargetAttributes = {
+					58E0EEFA24FBF51A00032E56 = {
+						CreatedOnToolsVersion = 11.6;
+					};
+					58E0EF1024FBF51B00032E56 = {
+						CreatedOnToolsVersion = 11.6;
+						TestTargetID = 58E0EEFA24FBF51A00032E56;
+					};
+				};
+			};
+			buildConfigurationList = 58E0EEF624FBF51A00032E56 /* Build configuration list for PBXProject "Kindling" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 58E0EEF224FBF51A00032E56;
+			productRefGroup = 58E0EEFC24FBF51A00032E56 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				58E0EEFA24FBF51A00032E56 /* Kindling */,
+				58E0EF1024FBF51B00032E56 /* KindlingTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		58E0EEF924FBF51A00032E56 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58E0EF0B24FBF51B00032E56 /* LaunchScreen.storyboard in Resources */,
+				58E0EF0824FBF51B00032E56 /* Assets.xcassets in Resources */,
+				58E0EF0624FBF51A00032E56 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		58E0EF0F24FBF51B00032E56 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1518BAAB14CD10B17F529860 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KindlingTests/Pods-KindlingTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KindlingTests/Pods-KindlingTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KindlingTests/Pods-KindlingTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4352352F0E49E979133A9A1B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KindlingTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6BEA1C05D759DBDA16D9850E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Kindling-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C609FD7A137E8BD5DB44B4E6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Kindling/Pods-Kindling-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Kindling/Pods-Kindling-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Kindling/Pods-Kindling-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		58E0EEF724FBF51A00032E56 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58E0EF2224FBF85700032E56 /* StringExtensions.swift in Sources */,
+				58E0EF0324FBF51A00032E56 /* ViewController.swift in Sources */,
+				58E0EF2A24FBFB5300032E56 /* KindlingEnv.swift in Sources */,
+				58E0EEFF24FBF51A00032E56 /* AppDelegate.swift in Sources */,
+				58E0EF0124FBF51A00032E56 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		58E0EF0D24FBF51B00032E56 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58E0EF2624FBF8A400032E56 /* StringExtensionsTests.swift in Sources */,
+				58E0EF2B24FBFB5300032E56 /* KindlingEnv.swift in Sources */,
+				58E0EF2324FBF85700032E56 /* StringExtensions.swift in Sources */,
+				58E0EF1624FBF51B00032E56 /* KindlingTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		58E0EF1324FBF51B00032E56 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 58E0EEFA24FBF51A00032E56 /* Kindling */;
+			targetProxy = 58E0EF1224FBF51B00032E56 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		58E0EF0424FBF51A00032E56 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				58E0EF0524FBF51A00032E56 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		58E0EF0924FBF51B00032E56 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				58E0EF0A24FBF51B00032E56 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		58E0EF1824FBF51B00032E56 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		58E0EF1924FBF51B00032E56 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		58E0EF1B24FBF51B00032E56 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 247510C7D8971C8456FC7AD0 /* Pods-Kindling.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7VWX8ZFRJD;
+				INFOPLIST_FILE = Kindling/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = za.co.entelect.Kindling;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		58E0EF1C24FBF51B00032E56 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 174959245CB4589E44F037D5 /* Pods-Kindling.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7VWX8ZFRJD;
+				INFOPLIST_FILE = Kindling/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = za.co.entelect.Kindling;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		58E0EF1E24FBF51B00032E56 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 89BF3C76411A0677030FDDAD /* Pods-KindlingTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7VWX8ZFRJD;
+				INFOPLIST_FILE = KindlingTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = za.co.entelect.KindlingTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Kindling.app/Kindling";
+			};
+			name = Debug;
+		};
+		58E0EF1F24FBF51B00032E56 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A1B0748F0AD5A3975BCA181C /* Pods-KindlingTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7VWX8ZFRJD;
+				INFOPLIST_FILE = KindlingTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = za.co.entelect.KindlingTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Kindling.app/Kindling";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		58E0EEF624FBF51A00032E56 /* Build configuration list for PBXProject "Kindling" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				58E0EF1824FBF51B00032E56 /* Debug */,
+				58E0EF1924FBF51B00032E56 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		58E0EF1A24FBF51B00032E56 /* Build configuration list for PBXNativeTarget "Kindling" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				58E0EF1B24FBF51B00032E56 /* Debug */,
+				58E0EF1C24FBF51B00032E56 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		58E0EF1D24FBF51B00032E56 /* Build configuration list for PBXNativeTarget "KindlingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				58E0EF1E24FBF51B00032E56 /* Debug */,
+				58E0EF1F24FBF51B00032E56 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 58E0EEF324FBF51A00032E56 /* Project object */;
+}

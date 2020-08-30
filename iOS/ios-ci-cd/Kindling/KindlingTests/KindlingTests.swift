@@ -1,15 +1,15 @@
 //
-//  Kindling_CocoapodsTests.swift
-//  Kindling-CocoapodsTests
+//  KindlingTests.swift
+//  KindlingTests
 //
-//  Created by Christopher Araujo on 2020/08/19.
+//  Created by Christopher Araujo on 2020/08/30.
 //  Copyright © 2020 Entelect. All rights reserved.
 //
 
 import XCTest
-@testable import Kindling_Cocoapods
+@testable import Kindling
 
-class Kindling_CocoapodsTests: XCTestCase {
+class KindlingTests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
