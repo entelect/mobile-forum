@@ -24,6 +24,7 @@ class ViewController: UIViewController {
         case .production:
             currentEnvironment.isHidden = true
         }
+        currentEnvironment.textColor = isDebug() ? .red : .black
     }
 }
 
