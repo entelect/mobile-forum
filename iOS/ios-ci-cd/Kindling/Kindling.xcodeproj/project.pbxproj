@@ -35,8 +35,14 @@
 
 /* Begin PBXFileReference section */
 		174959245CB4589E44F037D5 /* Pods-Kindling.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kindling.release.xcconfig"; path = "Target Support Files/Pods-Kindling/Pods-Kindling.release.xcconfig"; sourceTree = "<group>"; };
+		1E7B1F524845333D81A55402 /* Pods-Kindling.debug qa.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kindling.debug qa.xcconfig"; path = "Target Support Files/Pods-Kindling/Pods-Kindling.debug qa.xcconfig"; sourceTree = "<group>"; };
 		247510C7D8971C8456FC7AD0 /* Pods-Kindling.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kindling.debug.xcconfig"; path = "Target Support Files/Pods-Kindling/Pods-Kindling.debug.xcconfig"; sourceTree = "<group>"; };
+		2F3180327460D7B91186B228 /* Pods-Kindling.release development.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kindling.release development.xcconfig"; path = "Target Support Files/Pods-Kindling/Pods-Kindling.release development.xcconfig"; sourceTree = "<group>"; };
 		452BBCFACC39C0246B821B46 /* Pods_KindlingTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KindlingTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4DD67BA8DA93A4FB44051407 /* Pods-KindlingTests.debug production.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KindlingTests.debug production.xcconfig"; path = "Target Support Files/Pods-KindlingTests/Pods-KindlingTests.debug production.xcconfig"; sourceTree = "<group>"; };
+		584EE2AF24FC15F800C19E44 /* Development.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Development.xcconfig; sourceTree = "<group>"; };
+		584EE2B124FC161C00C19E44 /* QA.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = QA.xcconfig; sourceTree = "<group>"; };
+		584EE2B324FC164300C19E44 /* Production.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Production.xcconfig; sourceTree = "<group>"; };
 		58E0EEFB24FBF51A00032E56 /* Kindling.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kindling.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		58E0EEFE24FBF51A00032E56 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		58E0EF0024FBF51A00032E56 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -51,9 +57,18 @@
 		58E0EF2124FBF85700032E56 /* StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
 		58E0EF2524FBF8A400032E56 /* StringExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensionsTests.swift; sourceTree = "<group>"; };
 		58E0EF2924FBFB5300032E56 /* KindlingEnv.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KindlingEnv.swift; sourceTree = "<group>"; };
+		658F014D9A172E8BBD2C347B /* Pods-KindlingTests.release development.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KindlingTests.release development.xcconfig"; path = "Target Support Files/Pods-KindlingTests/Pods-KindlingTests.release development.xcconfig"; sourceTree = "<group>"; };
 		89BF3C76411A0677030FDDAD /* Pods-KindlingTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KindlingTests.debug.xcconfig"; path = "Target Support Files/Pods-KindlingTests/Pods-KindlingTests.debug.xcconfig"; sourceTree = "<group>"; };
+		8B1B67F4EC92B25E1975D618 /* Pods-KindlingTests.release production.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KindlingTests.release production.xcconfig"; path = "Target Support Files/Pods-KindlingTests/Pods-KindlingTests.release production.xcconfig"; sourceTree = "<group>"; };
+		95481B149B7952CFFB3D7572 /* Pods-KindlingTests.debug development.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KindlingTests.debug development.xcconfig"; path = "Target Support Files/Pods-KindlingTests/Pods-KindlingTests.debug development.xcconfig"; sourceTree = "<group>"; };
 		A1B0748F0AD5A3975BCA181C /* Pods-KindlingTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KindlingTests.release.xcconfig"; path = "Target Support Files/Pods-KindlingTests/Pods-KindlingTests.release.xcconfig"; sourceTree = "<group>"; };
+		B9DFF55D81550ADD5EF0B9BF /* Pods-Kindling.debug production.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kindling.debug production.xcconfig"; path = "Target Support Files/Pods-Kindling/Pods-Kindling.debug production.xcconfig"; sourceTree = "<group>"; };
+		D228B88400AEA7C94262DF8D /* Pods-KindlingTests.debug qa.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KindlingTests.debug qa.xcconfig"; path = "Target Support Files/Pods-KindlingTests/Pods-KindlingTests.debug qa.xcconfig"; sourceTree = "<group>"; };
+		E321F16C2B6245EDC23AE0BE /* Pods-Kindling.release production.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kindling.release production.xcconfig"; path = "Target Support Files/Pods-Kindling/Pods-Kindling.release production.xcconfig"; sourceTree = "<group>"; };
 		EAC72E63D87E7B844B49195E /* Pods_Kindling.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Kindling.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE84392CE1F53F79D2240198 /* Pods-Kindling.debug development.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kindling.debug development.xcconfig"; path = "Target Support Files/Pods-Kindling/Pods-Kindling.debug development.xcconfig"; sourceTree = "<group>"; };
+		EEF6321437CF2BB34BB2503D /* Pods-Kindling.release qa.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kindling.release qa.xcconfig"; path = "Target Support Files/Pods-Kindling/Pods-Kindling.release qa.xcconfig"; sourceTree = "<group>"; };
+		F0486D6E972D6D9E0CFC0AEB /* Pods-KindlingTests.release qa.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KindlingTests.release qa.xcconfig"; path = "Target Support Files/Pods-KindlingTests/Pods-KindlingTests.release qa.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +103,9 @@
 		58E0EEF224FBF51A00032E56 = {
 			isa = PBXGroup;
 			children = (
+				584EE2B324FC164300C19E44 /* Production.xcconfig */,
+				584EE2AF24FC15F800C19E44 /* Development.xcconfig */,
+				584EE2B124FC161C00C19E44 /* QA.xcconfig */,
 				58E0EEFD24FBF51A00032E56 /* Kindling */,
 				58E0EF1424FBF51B00032E56 /* KindlingTests */,
 				58E0EEFC24FBF51A00032E56 /* Products */,
@@ -178,6 +196,18 @@
 				174959245CB4589E44F037D5 /* Pods-Kindling.release.xcconfig */,
 				89BF3C76411A0677030FDDAD /* Pods-KindlingTests.debug.xcconfig */,
 				A1B0748F0AD5A3975BCA181C /* Pods-KindlingTests.release.xcconfig */,
+				B9DFF55D81550ADD5EF0B9BF /* Pods-Kindling.debug production.xcconfig */,
+				1E7B1F524845333D81A55402 /* Pods-Kindling.debug qa.xcconfig */,
+				EE84392CE1F53F79D2240198 /* Pods-Kindling.debug development.xcconfig */,
+				E321F16C2B6245EDC23AE0BE /* Pods-Kindling.release production.xcconfig */,
+				EEF6321437CF2BB34BB2503D /* Pods-Kindling.release qa.xcconfig */,
+				2F3180327460D7B91186B228 /* Pods-Kindling.release development.xcconfig */,
+				4DD67BA8DA93A4FB44051407 /* Pods-KindlingTests.debug production.xcconfig */,
+				D228B88400AEA7C94262DF8D /* Pods-KindlingTests.debug qa.xcconfig */,
+				95481B149B7952CFFB3D7572 /* Pods-KindlingTests.debug development.xcconfig */,
+				8B1B67F4EC92B25E1975D618 /* Pods-KindlingTests.release production.xcconfig */,
+				F0486D6E972D6D9E0CFC0AEB /* Pods-KindlingTests.release qa.xcconfig */,
+				658F014D9A172E8BBD2C347B /* Pods-KindlingTests.release development.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -417,8 +447,9 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		58E0EF1824FBF51B00032E56 /* Debug */ = {
+		588F0B0624FC0BD200CC3BDD /* Debug Development */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 584EE2AF24FC15F800C19E44 /* Development.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -467,7 +498,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -475,10 +506,359 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
-			name = Debug;
+			name = "Debug Development";
 		};
-		58E0EF1924FBF51B00032E56 /* Release */ = {
+		588F0B0724FC0BD200CC3BDD /* Debug Development */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EE84392CE1F53F79D2240198 /* Pods-Kindling.debug development.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7VWX8ZFRJD;
+				INFOPLIST_FILE = Kindling/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = za.co.entelect.Kindling;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = "Debug Development";
+		};
+		588F0B0824FC0BD200CC3BDD /* Debug Development */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 95481B149B7952CFFB3D7572 /* Pods-KindlingTests.debug development.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7VWX8ZFRJD;
+				INFOPLIST_FILE = KindlingTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = za.co.entelect.KindlingTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Kindling.app/Kindling";
+			};
+			name = "Debug Development";
+		};
+		588F0B0924FC0BF300CC3BDD /* Debug QA */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 584EE2B124FC161C00C19E44 /* QA.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = "Debug QA";
+		};
+		588F0B0A24FC0BF300CC3BDD /* Debug QA */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1E7B1F524845333D81A55402 /* Pods-Kindling.debug qa.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7VWX8ZFRJD;
+				INFOPLIST_FILE = Kindling/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = za.co.entelect.Kindling;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = "Debug QA";
+		};
+		588F0B0B24FC0BF300CC3BDD /* Debug QA */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D228B88400AEA7C94262DF8D /* Pods-KindlingTests.debug qa.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7VWX8ZFRJD;
+				INFOPLIST_FILE = KindlingTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = za.co.entelect.KindlingTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Kindling.app/Kindling";
+			};
+			name = "Debug QA";
+		};
+		588F0B0C24FC0BFA00CC3BDD /* Debug Production */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 584EE2B324FC164300C19E44 /* Production.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = "Debug Production";
+		};
+		588F0B0D24FC0BFA00CC3BDD /* Debug Production */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B9DFF55D81550ADD5EF0B9BF /* Pods-Kindling.debug production.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7VWX8ZFRJD;
+				INFOPLIST_FILE = Kindling/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = za.co.entelect.Kindling;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = "Debug Production";
+		};
+		588F0B0E24FC0BFA00CC3BDD /* Debug Production */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4DD67BA8DA93A4FB44051407 /* Pods-KindlingTests.debug production.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7VWX8ZFRJD;
+				INFOPLIST_FILE = KindlingTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = za.co.entelect.KindlingTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Kindling.app/Kindling";
+			};
+			name = "Debug Production";
+		};
+		588F0B1524FC0C2400CC3BDD /* Release Development */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 584EE2AF24FC15F800C19E44 /* Development.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = "";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = "Release Development";
+		};
+		588F0B1624FC0C2400CC3BDD /* Release Development */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2F3180327460D7B91186B228 /* Pods-Kindling.release development.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7VWX8ZFRJD;
+				INFOPLIST_FILE = Kindling/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = za.co.entelect.Kindling;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = "Release Development";
+		};
+		588F0B1724FC0C2400CC3BDD /* Release Development */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 658F014D9A172E8BBD2C347B /* Pods-KindlingTests.release development.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7VWX8ZFRJD;
+				INFOPLIST_FILE = KindlingTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = za.co.entelect.KindlingTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Kindling.app/Kindling";
+			};
+			name = "Release Development";
+		};
+		588F0B1824FC0C2C00CC3BDD /* Release QA */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 584EE2B124FC161C00C19E44 /* QA.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -515,13 +895,14 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = "";
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -529,11 +910,11 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
 			};
-			name = Release;
+			name = "Release QA";
 		};
-		58E0EF1B24FBF51B00032E56 /* Debug */ = {
+		588F0B1924FC0C2C00CC3BDD /* Release QA */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 247510C7D8971C8456FC7AD0 /* Pods-Kindling.debug.xcconfig */;
+			baseConfigurationReference = EEF6321437CF2BB34BB2503D /* Pods-Kindling.release qa.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -548,30 +929,11 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
-			name = Debug;
+			name = "Release QA";
 		};
-		58E0EF1C24FBF51B00032E56 /* Release */ = {
+		588F0B1A24FC0C2C00CC3BDD /* Release QA */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 174959245CB4589E44F037D5 /* Pods-Kindling.release.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 7VWX8ZFRJD;
-				INFOPLIST_FILE = Kindling/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = za.co.entelect.Kindling;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		58E0EF1E24FBF51B00032E56 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 89BF3C76411A0677030FDDAD /* Pods-KindlingTests.debug.xcconfig */;
+			baseConfigurationReference = F0486D6E972D6D9E0CFC0AEB /* Pods-KindlingTests.release qa.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -590,11 +952,86 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Kindling.app/Kindling";
 			};
-			name = Debug;
+			name = "Release QA";
 		};
-		58E0EF1F24FBF51B00032E56 /* Release */ = {
+		588F0B1B24FC0C3300CC3BDD /* Release Production */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A1B0748F0AD5A3975BCA181C /* Pods-KindlingTests.release.xcconfig */;
+			baseConfigurationReference = 584EE2B324FC164300C19E44 /* Production.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = "";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = "Release Production";
+		};
+		588F0B1C24FC0C3300CC3BDD /* Release Production */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E321F16C2B6245EDC23AE0BE /* Pods-Kindling.release production.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7VWX8ZFRJD;
+				INFOPLIST_FILE = Kindling/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = za.co.entelect.Kindling;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = "Release Production";
+		};
+		588F0B1D24FC0C3300CC3BDD /* Release Production */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8B1B67F4EC92B25E1975D618 /* Pods-KindlingTests.release production.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -613,7 +1050,7 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Kindling.app/Kindling";
 			};
-			name = Release;
+			name = "Release Production";
 		};
 /* End XCBuildConfiguration section */
 
@@ -621,29 +1058,41 @@
 		58E0EEF624FBF51A00032E56 /* Build configuration list for PBXProject "Kindling" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				58E0EF1824FBF51B00032E56 /* Debug */,
-				58E0EF1924FBF51B00032E56 /* Release */,
+				588F0B0C24FC0BFA00CC3BDD /* Debug Production */,
+				588F0B0924FC0BF300CC3BDD /* Debug QA */,
+				588F0B0624FC0BD200CC3BDD /* Debug Development */,
+				588F0B1B24FC0C3300CC3BDD /* Release Production */,
+				588F0B1824FC0C2C00CC3BDD /* Release QA */,
+				588F0B1524FC0C2400CC3BDD /* Release Development */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = "Debug Production";
 		};
 		58E0EF1A24FBF51B00032E56 /* Build configuration list for PBXNativeTarget "Kindling" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				58E0EF1B24FBF51B00032E56 /* Debug */,
-				58E0EF1C24FBF51B00032E56 /* Release */,
+				588F0B0D24FC0BFA00CC3BDD /* Debug Production */,
+				588F0B0A24FC0BF300CC3BDD /* Debug QA */,
+				588F0B0724FC0BD200CC3BDD /* Debug Development */,
+				588F0B1C24FC0C3300CC3BDD /* Release Production */,
+				588F0B1924FC0C2C00CC3BDD /* Release QA */,
+				588F0B1624FC0C2400CC3BDD /* Release Development */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = "Debug Production";
 		};
 		58E0EF1D24FBF51B00032E56 /* Build configuration list for PBXNativeTarget "KindlingTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				58E0EF1E24FBF51B00032E56 /* Debug */,
-				58E0EF1F24FBF51B00032E56 /* Release */,
+				588F0B0E24FC0BFA00CC3BDD /* Debug Production */,
+				588F0B0B24FC0BF300CC3BDD /* Debug QA */,
+				588F0B0824FC0BD200CC3BDD /* Debug Development */,
+				588F0B1D24FC0C3300CC3BDD /* Release Production */,
+				588F0B1A24FC0C2C00CC3BDD /* Release QA */,
+				588F0B1724FC0C2400CC3BDD /* Release Development */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = "Debug Production";
 		};
 /* End XCConfigurationList section */
 	};

@@ -14,6 +14,17 @@ enum KindlingEnv {
     case development
     
     static var currentEnv: KindlingEnv {
-        return .production
+        if let info = Bundle.main.infoDictionary, let env = info["APP_ENV"] as? String {
+            if env == "DEVELOPMENT" {
+                return .development
+            }
+            if env == "QA" {
+                return .qa
+            }
+            if env == "PRODUCTION" {
+                return .production
+            }
+        }
+        fatalError("Environment variables aren't set")
     }
 }

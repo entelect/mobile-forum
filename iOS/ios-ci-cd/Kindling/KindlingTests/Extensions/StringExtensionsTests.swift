@@ -1,11 +1,13 @@
 import XCTest
+import Fakery
 
 class StringExtensionsTests: XCTestCase {
-
+    
+    private let faker = Faker(locale: "nb-NO")
+    
     func testStringIsConvertedToNSString() {
-        let result: Any = "Hello World".nsString
-        XCTAssertTrue(result is NSString)
-        XCTAssertEqual("Hello World", result as! NSString)
+        let randomString: String = faker.name.name()
+        XCTAssertEqual(randomString as NSString, randomString.nsString)
     }
 
 }
