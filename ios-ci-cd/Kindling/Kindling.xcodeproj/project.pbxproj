@@ -14,7 +14,6 @@
 		58E0EF0624FBF51A00032E56 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58E0EF0424FBF51A00032E56 /* Main.storyboard */; };
 		58E0EF0824FBF51B00032E56 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58E0EF0724FBF51B00032E56 /* Assets.xcassets */; };
 		58E0EF0B24FBF51B00032E56 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58E0EF0924FBF51B00032E56 /* LaunchScreen.storyboard */; };
-		58E0EF1624FBF51B00032E56 /* KindlingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E0EF1524FBF51B00032E56 /* KindlingTests.swift */; };
 		58E0EF2224FBF85700032E56 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E0EF2124FBF85700032E56 /* StringExtensions.swift */; };
 		58E0EF2324FBF85700032E56 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E0EF2124FBF85700032E56 /* StringExtensions.swift */; };
 		58E0EF2624FBF8A400032E56 /* StringExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E0EF2524FBF8A400032E56 /* StringExtensionsTests.swift */; };
@@ -52,7 +51,6 @@
 		58E0EF0A24FBF51B00032E56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		58E0EF0C24FBF51B00032E56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		58E0EF1124FBF51B00032E56 /* KindlingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KindlingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		58E0EF1524FBF51B00032E56 /* KindlingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KindlingTests.swift; sourceTree = "<group>"; };
 		58E0EF1724FBF51B00032E56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		58E0EF2124FBF85700032E56 /* StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
 		58E0EF2524FBF8A400032E56 /* StringExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensionsTests.swift; sourceTree = "<group>"; };
@@ -130,7 +128,6 @@
 			isa = PBXGroup;
 			children = (
 				58E0EF2424FBF88B00032E56 /* Extensions */,
-				58E0EF1524FBF51B00032E56 /* KindlingTests.swift */,
 				58E0EF1724FBF51B00032E56 /* Info.plist */,
 			);
 			path = KindlingTests;
@@ -387,7 +384,6 @@
 				58E0EF2624FBF8A400032E56 /* StringExtensionsTests.swift in Sources */,
 				58E0EF2B24FBFB5300032E56 /* KindlingEnv.swift in Sources */,
 				58E0EF2324FBF85700032E56 /* StringExtensions.swift in Sources */,
-				58E0EF1624FBF51B00032E56 /* KindlingTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
