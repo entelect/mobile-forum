@@ -21,8 +21,7 @@ import Foundation
         formatter.string(from: date)
     }
     
-    @objc
-    static func title(oneType type: MapperOneType, completion: (String) -> Void) {
+    @objc static func title(oneType type: MapperOneType, completion: (String) -> Void) {
         completion(type.title)
     }
     
