@@ -7,23 +7,21 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "MapperTwoType.h"
 
-// Swift enum needs to be forward declared
 typedef NS_ENUM(NSInteger, MapperOneType);
-
-typedef NS_ENUM(NSUInteger, MapperTwoType) {
-    kSwift,
-    kObjC
-};
 
 NS_ASSUME_NONNULL_BEGIN
 
+NS_SWIFT_NAME(NSMapperTwo)
 @interface MapperTwo : NSObject
 
 + (nullable NSString*)formatForDate:(nonnull NSDate*)date;
-+ (nullable NSString*)formatSwiftForDate:(nonnull NSDate*)date;
-+ (nonnull NSString*)titleForOneType:(MapperOneType)type;
-+ (nonnull NSString*)titleForTwoType:(MapperTwoType)type;
++ (nullable NSString*)formatForSwiftDate:(nonnull NSDate*)date NS_SWIFT_NAME(format(forSwift:));
+
+// This function will not be visible in Swift
++ (void)titleForOneType:(MapperOneType)type completion:(void (^)(NSString* title))completion;
++ (void)titleForTwoType:(MapperTwoType)type completion:(void (^)(NSString* title))completion;
 
 @end
 

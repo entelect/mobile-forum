@@ -8,9 +8,8 @@
 
 import Foundation
 
-@objcMembers
 // Needs to inherit from NSObject to be available in Obj-C
-class MapperOne: NSObject {
+@objc class MapperOne: NSObject {
     private static var formatter: DateFormatter = {
         let formatter = DateFormatter()
         formatter.dateFormat = "yyyy-MM-dd"
@@ -22,28 +21,14 @@ class MapperOne: NSObject {
         formatter.string(from: date)
     }
     
-    static func title(oneType type: MapperOneType) -> String {
-        type.title
+    @objc
+    static func title(oneType type: MapperOneType, completion: (String) -> Void) {
+        completion(type.title)
     }
     
-    static func title(twoType type: MapperTwoType) -> String {
-        MapperTwo.title(for: type)
-    }
-}
-
-@objc
-// Has to be of type Int to be used in Obj-C, this means no associated types or other Raw types
-enum MapperOneType: Int {
-    case swift
-    case objC
-    
-    // Unable to make this into a Obj-C accessable signature
-    var title: String {
-        switch self {
-        case .swift:
-            return "One: Swift"
-        case .objC:
-            return "One: Obj-C"
+    static func title(twoType type: MapperTwoType, completion: @escaping (String) -> Void) {
+        NSMapperTwo.title(for: type) { title in
+            completion(title)
         }
     }
 }

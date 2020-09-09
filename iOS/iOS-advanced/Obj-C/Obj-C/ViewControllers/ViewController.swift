@@ -16,20 +16,26 @@ class ViewController: UIViewController {
     @IBOutlet weak var swiftEnumLabel: UILabel!
     @IBOutlet weak var objCSwiftEnumLabel: UILabel!
     @IBOutlet weak var objCEnumLabel: UILabel!
-    @IBOutlet weak var swiftObjCEnumLabel: UILabel!
     
     @IBAction func buttonTapped(_ sender: Any) {
-        swiftDateLabel.text = "Swift date: \(MapperOne.format(for: Date()) ?? "No value")"
-        objDateLabel.text = "Obj-C date: \(MapperTwo.format(for: Date()) ?? "No value")"
+        swiftDateLabel.text = "Swift date:\n \(MapperOne.format(for: Date()) ?? "No value")"
+        objDateLabel.text = "Obj-C date:\n \(NSMapperTwo.format(for: Date()) ?? "No value")"
         
-        swiftObjCDateLabel.text = "Swift -> Obj-C date: \(MapperTwo.formatSwift(for: Date()) ?? "No value")"
-        objCExtensionDateLabel.text = "Obj-C Extension date: \(MapperTwo.formatExtension(for: Date()) ?? "No value")"
         
-        swiftEnumLabel.text = "Swift enum: \(MapperOne.title(oneType: .swift))"
-        objCSwiftEnumLabel.text = "Obj-C -> Swift enum: \(MapperOne.title(twoType: .swift))"
+        swiftObjCDateLabel.text = "Swift -> Obj-C date:\n \(NSMapperTwo.format(forSwift: Date()) ?? "No value")"
+        objCExtensionDateLabel.text = "Obj-C Extension date:\n \(NSMapperTwo.formatExtension(for: Date()) ?? "No value")"
         
-        objCEnumLabel.text = "Obj-C enum: \(MapperTwo.title(for: .objC))"
-        swiftObjCEnumLabel.text = "Swift -> Obj-C enum: \(MapperTwo.title(for: .objC))"
+        
+        MapperOne.title(oneType: .swift) { [weak self] title in
+            self?.swiftEnumLabel.text = "Swift enum:\n \(title)"
+        }
+        MapperOne.title(twoType: .swift) { [weak self] title in
+            self?.objCSwiftEnumLabel.text = "Obj-C -> Swift enum:\n \(title)"
+        }
+
+        
+        NSMapperTwo.title(for: MapperTwoType.objC) { [weak self] title in
+            self?.objCEnumLabel.text = "Obj-C enum:\n \(title)"
+        }
     }
-    
 }

@@ -3,3 +3,4 @@
 //
 
 #import "MapperTwo.h"
+#import "MapperTwoType.h"

@@ -22,50 +22,44 @@
                                     <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PfR-y3-1tA"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Swift date:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kcc-E6-h5I">
-                                <rect key="frame" x="50" y="144" width="314" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Swift date:" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kcc-E6-h5I">
+                                <rect key="frame" x="50" y="144" width="314" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Obj-C date:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Liw-fT-aL3">
-                                <rect key="frame" x="50" y="170" width="314" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Obj-C date:" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Liw-fT-aL3">
+                                <rect key="frame" x="50" y="169.5" width="314" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Swift -&gt; Obj-C date:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gFO-Uv-5x8">
-                                <rect key="frame" x="50" y="211" width="314" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Swift -&gt; Obj-C date:" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gFO-Uv-5x8">
+                                <rect key="frame" x="50" y="210" width="314" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Obj-C Extension date:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="38a-ED-rzN">
-                                <rect key="frame" x="50" y="237" width="314" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Obj-C Extension date:" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="38a-ED-rzN">
+                                <rect key="frame" x="50" y="235.5" width="314" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Swift enum:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rUz-Ur-VSF">
-                                <rect key="frame" x="50" y="308" width="314" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Swift enum:" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rUz-Ur-VSF">
+                                <rect key="frame" x="50" y="306" width="314" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Obj-C -&gt; Swift enum:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="427-bb-ybC">
-                                <rect key="frame" x="50" y="334" width="314" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Obj-C -&gt; Swift enum:" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="427-bb-ybC">
+                                <rect key="frame" x="50" y="331.5" width="314" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Obj-C enum:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NTJ-ql-ps7">
-                                <rect key="frame" x="50" y="375" width="314" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Swift -&gt; Obj-C enum:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zDE-27-ReG">
-                                <rect key="frame" x="50" y="401" width="314" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Obj-C enum:" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NTJ-ql-ps7">
+                                <rect key="frame" x="50" y="372" width="314" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -79,8 +73,6 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gFO-Uv-5x8" secondAttribute="trailing" constant="50" id="DX1-Ea-Rum"/>
                             <constraint firstItem="Kcc-E6-h5I" firstAttribute="top" secondItem="1Jx-GR-43l" secondAttribute="bottom" constant="20" id="MOo-4O-ryE"/>
                             <constraint firstItem="rUz-Ur-VSF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="Pla-2q-EKf"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="zDE-27-ReG" secondAttribute="trailing" constant="50" id="Qk0-Qt-Pmx"/>
-                            <constraint firstItem="zDE-27-ReG" firstAttribute="top" secondItem="NTJ-ql-ps7" secondAttribute="bottom" constant="5" id="SMo-Hy-Kb2"/>
                             <constraint firstItem="NTJ-ql-ps7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="UvR-pf-B0d"/>
                             <constraint firstItem="38a-ED-rzN" firstAttribute="top" secondItem="gFO-Uv-5x8" secondAttribute="bottom" constant="5" id="WkR-Qq-Ojv"/>
                             <constraint firstItem="NTJ-ql-ps7" firstAttribute="top" secondItem="427-bb-ybC" secondAttribute="bottom" constant="20" id="XgA-OF-xa0"/>
@@ -94,7 +86,6 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Liw-fT-aL3" secondAttribute="trailing" constant="50" id="gLF-yp-wYW"/>
                             <constraint firstItem="Liw-fT-aL3" firstAttribute="top" secondItem="Kcc-E6-h5I" secondAttribute="bottom" constant="5" id="geJ-dM-255"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="427-bb-ybC" secondAttribute="trailing" constant="50" id="mMV-17-rJx"/>
-                            <constraint firstItem="zDE-27-ReG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="nK4-aZ-g5d"/>
                             <constraint firstItem="1Jx-GR-43l" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="ovn-lc-TOy"/>
                             <constraint firstItem="Liw-fT-aL3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="rMZ-CP-7PZ"/>
                             <constraint firstItem="Kcc-E6-h5I" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="vd5-5M-FM7"/>
@@ -111,7 +102,6 @@
                         <outlet property="swiftDateLabel" destination="Kcc-E6-h5I" id="zXF-Nm-0Fb"/>
                         <outlet property="swiftEnumLabel" destination="rUz-Ur-VSF" id="QH6-1e-Uo5"/>
                         <outlet property="swiftObjCDateLabel" destination="gFO-Uv-5x8" id="Czh-Rz-uuK"/>
-                        <outlet property="swiftObjCEnumLabel" destination="zDE-27-ReG" id="7x8-2q-aZP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

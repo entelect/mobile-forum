@@ -8,8 +8,8 @@
 
 import Foundation
 
-extension MapperTwo {
+extension NSMapperTwo {
     static func formatExtension(for date: Date) -> String? {
-        MapperTwo.format(for: date)
+        NSMapperTwo.format(for: date)
     }
 }

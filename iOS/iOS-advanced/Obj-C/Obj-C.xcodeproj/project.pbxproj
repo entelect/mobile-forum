@@ -16,6 +16,7 @@
 		26FB3FE7250788E400B9C3E2 /* MapperOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FB3FE6250788E400B9C3E2 /* MapperOne.swift */; };
 		26FB3FEC2507891B00B9C3E2 /* MapperTwo.m in Sources */ = {isa = PBXBuildFile; fileRef = 26FB3FEB2507891B00B9C3E2 /* MapperTwo.m */; };
 		26FB3FEE2507914200B9C3E2 /* MapperTwo+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FB3FED2507914200B9C3E2 /* MapperTwo+Extension.swift */; };
+		26FB40B32508D61500B9C3E2 /* MapperOneType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FB40B22508D61500B9C3E2 /* MapperOneType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,8 @@
 		26FB3FEA2507891B00B9C3E2 /* MapperTwo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MapperTwo.h; sourceTree = "<group>"; };
 		26FB3FEB2507891B00B9C3E2 /* MapperTwo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MapperTwo.m; sourceTree = "<group>"; };
 		26FB3FED2507914200B9C3E2 /* MapperTwo+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MapperTwo+Extension.swift"; sourceTree = "<group>"; };
+		26FB40B22508D61500B9C3E2 /* MapperOneType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapperOneType.swift; sourceTree = "<group>"; };
+		26FB40B42508D64800B9C3E2 /* MapperTwoType.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MapperTwoType.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +67,7 @@
 		264B2EBB250614FE00F15CB7 /* Obj-C */ = {
 			isa = PBXGroup;
 			children = (
+				26FB40B12508D60600B9C3E2 /* Models */,
 				26FB3FE5250788CD00B9C3E2 /* Mappers */,
 				264B2ED02506150700F15CB7 /* ViewControllers */,
 				264B2EBC250614FE00F15CB7 /* AppDelegate.swift */,
@@ -94,6 +98,15 @@
 				26FB3FED2507914200B9C3E2 /* MapperTwo+Extension.swift */,
 			);
 			path = Mappers;
+			sourceTree = "<group>";
+		};
+		26FB40B12508D60600B9C3E2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				26FB40B22508D61500B9C3E2 /* MapperOneType.swift */,
+				26FB40B42508D64800B9C3E2 /* MapperTwoType.h */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -171,6 +184,7 @@
 				26FB3FEC2507891B00B9C3E2 /* MapperTwo.m in Sources */,
 				26FB3FEE2507914200B9C3E2 /* MapperTwo+Extension.swift in Sources */,
 				264B2EC1250614FE00F15CB7 /* ViewController.swift in Sources */,
+				26FB40B32508D61500B9C3E2 /* MapperOneType.swift in Sources */,
 				264B2EBD250614FE00F15CB7 /* AppDelegate.swift in Sources */,
 				26FB3FE7250788E400B9C3E2 /* MapperOne.swift in Sources */,
 				264B2EBF250614FE00F15CB7 /* SceneDelegate.swift in Sources */,

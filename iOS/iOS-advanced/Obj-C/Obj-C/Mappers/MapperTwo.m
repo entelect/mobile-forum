@@ -19,21 +19,25 @@
     return [self.dateFormatter stringFromDate:date];
 }
 
-+ (NSString*)formatSwiftForDate:(NSDate*)date {
++ (NSString*)formatForSwiftDate:(NSDate*)date {
     return [MapperOne formatForDate:date];
 }
 
-+ (NSString*)titleForTwoType:(MapperTwoType)type {
-    switch (type) {
-        case kSwift:
-            return @"Two: Swift";
-        case kObjC:
-            return @"Two: Obj-C";
-    }
++ (void)titleForOneType:(MapperOneType)type completion:(void (^)(NSString* title))completion {
+    [MapperOne titleWithOneType:MapperOneTypeObjC completion:^(NSString *title) {
+        completion(title);
+    }];
 }
 
-+ (NSString*)titleForOneType:(MapperOneType)type {
-    return [MapperOne titleWithOneType:MapperOneTypeSwift];
++ (void)titleForTwoType:(MapperTwoType)type completion:(void (^)(NSString* title))completion {
+    switch (type) {
+        case kSwift:
+            completion(@"Two: Swift");
+            break;
+        case kObjC:
+            completion(@"Two: Obj-C");
+            break;
+    }
 }
 
 + (NSDateFormatter *)dateFormatter {
